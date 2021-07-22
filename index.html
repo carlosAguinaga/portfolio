@@ -4,23 +4,62 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./grid.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>My Portfolio</title>
   </head>
   <body>
     <!-- NAVBAR -->
     <div class="navbar">
-      <a href="#" class="logo">
-        <span>&lt/</span>
-        <span>CA</span>
-        <span>&gt</span>
-      </a>
+      <div class="container">
+        <a href="#" class="logo">
+          <span class="brackets">&lt/</span>
+          <span>CA</span>
+          <span class="brackets">&gt</span>
+        </a>
 
-      <img src="./img/toggle-btn.svg" class="btn-darkmode" alt="darkmode button" />
-
-      <nav>
-        <img src="./img/menu_icon.svg" class="mobile-menu" alt="menu button" />
-        <img src="./img/close_icon.svg" class="mobile-menu-exit" alt="exit menu button" />
-        <ul class="nav-list">
+        <div class="right-icons">
+          <img
+            src="./img/toggle-btn.svg"
+            class="btn-darkmode"
+            alt="darkmode button"
+          />
+          <svg
+            width="36"
+            height="36"
+            viewBox="0 0 36 36"
+            fill="none"
+            id="mobile-cta"
+            class="mobile-menu"
+          >
+            <path
+              d="M29.52 16.2H6.48002C5.48642 16.2 5.40002 17.0046 5.40002 18C5.40002 18.9954 5.48642 19.8 6.48002 19.8H29.52C30.5136 19.8 30.6 18.9954 30.6 18C30.6 17.0046 30.5136 16.2 29.52 16.2ZM29.52 23.4H6.48002C5.48642 23.4 5.40002 24.2046 5.40002 25.2C5.40002 26.1954 5.48642 27 6.48002 27H29.52C30.5136 27 30.6 26.1954 30.6 25.2C30.6 24.2046 30.5136 23.4 29.52 23.4ZM6.48002 12.6H29.52C30.5136 12.6 30.6 11.7954 30.6 10.8C30.6 9.8046 30.5136 9 29.52 9H6.48002C5.48642 9 5.40002 9.8046 5.40002 10.8C5.40002 11.7954 5.48642 12.6 6.48002 12.6Z"
+              fill="black"
+            />
+          </svg>
+        </div>
+        <nav>
+          <svg
+            id="mobile-exit"
+            width="50"
+            height="50"
+            viewBox="0 0 60 60"
+            fill="none"
+          >
+            <path
+              class="mobile-menu-exit"
+              d="M30 3.75C15.5039 3.75 3.75 15.5039 3.75 30C3.75 44.4961 15.5039 56.25 30 56.25C44.4961 56.25 56.25 44.4961 56.25 30C56.25 15.5039 44.4961 3.75 30 3.75ZM39.6914 39.9727L35.8242 39.9551L30 33.0117L24.1816 39.9492L20.3086 39.9668C20.0508 39.9668 19.8398 39.7617 19.8398 39.498C19.8398 39.3867 19.8809 39.2813 19.9512 39.1934L27.5742 30.1113L19.9512 21.0352C19.8804 20.9493 19.8411 20.8418 19.8398 20.7305C19.8398 20.4727 20.0508 20.2617 20.3086 20.2617L24.1816 20.2793L30 27.2227L35.8184 20.2852L39.6855 20.2676C39.9434 20.2676 40.1543 20.4727 40.1543 20.7363C40.1543 20.8477 40.1133 20.9531 40.043 21.041L32.4316 30.1172L40.0488 39.1992C40.1191 39.2871 40.1602 39.3926 40.1602 39.5039C40.1602 39.7617 39.9492 39.9727 39.6914 39.9727Z"
+              fill="black"
+            />
+          </svg>
+          <ul class="nav-list">
             <!-- <li class="current"><a href="#">Home</a></li> -->
             <li><a href="#">Home</a></li>
             <li><a href="#">Portfolio</a></li>
@@ -28,25 +67,322 @@
             <li><a href="#">Resume</a></li>
             <li><a href="#">About me</a></li>
             <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-
-      <!-- HOME -->
-      <section class="hero">
-        <img class="image-profile" src="./img/image-profile.jpg" alt="">
-        <div class="hero-description">
-            <h2 class="title-hero">- I'm Carlos Aguinaga</h2>
-            <h3 class="subtitle-hero">web developer</h3>
-            <div class="social-hero">
-                <img src="./img/linkedin_icon.svg" alt="linkedin">
-                <img src="./img/github_icon.svg" alt="github">
-            </div>
-        </div>
-      </section>
-
-      <!-- PORTFOLIO -->
-      
-
+          </ul>
+        </nav>
+      </div>
     </div>
+
+    <!-- HOME -->
+    <section class="hero-section">
+      <div class="container">
+        <img
+          class="image-profile"
+          src="./img/image-profile.jpg"
+          alt="image profile"
+        />
+        <div class="hero-description">
+          <h2 class="title-hero">- I'm Carlos Aguinaga</h2>
+          <h3 class="subtitle-hero">web developer</h3>
+          <div class="social-hero">
+            <a href="#">
+              <img
+                src="./img/linkedin_icon.svg"
+                class="icon-linkedin"
+                alt="linkedin"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="./img/github_icon.svg"
+                class="icon-github"
+                alt="github"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="portfolo-section">
+      <div class="container d-fex align-center">
+        <div class="title-container">
+          <h2>Portfolio</h2>
+        </div>
+        <div class="cards-grid row col-10">
+          <!-- card-1 -->
+          <div class="card-item">
+            <a href="#">
+              <img src="img/image1.png" alt="" />
+            </a>
+            <div class="description-card-container">
+              <p class="text-card-description">
+                Este projecto se basa en un diseño mobile first donde el cliente
+                necesitava una rapida converción
+              </p>
+              <div class="card-badges-container">
+                <span class="badge-card">html</span>
+                <span class="badge-card">css</span>
+                <span class="badge-card">jav</span>
+                <span class="badge-card">javascript</span>
+                <span class="badge-card">javascript</span>
+                <span class="badge-card">javascript</span>
+                <span class="badge-card">javascript</span>
+                <span class="badge-card">javascript</span>
+              </div>
+
+              <div class="social-card-links">
+                <a href="#"><img src="./img/github_icon.svg" alt="github" /></a>
+                <a href="#"><img src="./img/go.svg" alt="go project" /></a>
+              </div>
+            </div>
+          </div>
+          <!-- card-2 -->
+          <div class="card-item">
+            <a href="#">
+              <img src="img/image1.png" alt="" />
+            </a>
+            <div class="description-card-container">
+              <p class="text-card-description">
+                Este projecto se basa en un diseño mobile first donde el cliente
+                necesitava una rapida converción
+              </p>
+              <div class="card-badges-container">
+                <span class="badge-card">html</span>
+                <span class="badge-card">css</span>
+                <span class="badge-card">jav</span>
+                <span class="badge-card">javascript</span>
+                <span class="badge-card">javascript</span>
+                <span class="badge-card">javascript</span>
+                <span class="badge-card">javascript</span>
+                <span class="badge-card">javascript</span>
+              </div>
+
+              <div class="social-card-links">
+                <a href="#"><img src="./img/github_icon.svg" alt="github" /></a>
+                <a href="#"><img src="./img/go.svg" alt="go project" /></a>
+              </div>
+            </div>
+          </div>
+          <!-- card-3 -->
+          <div class="card-item">
+            <a href="#">
+              <img src="img/image1.png" alt="" />
+            </a>
+            <div class="description-card-container">
+              <p class="text-card-description">
+                Este projecto se basa en un diseño mobile first donde el cliente
+                necesitava una rapida converción
+              </p>
+              <div class="card-badges-container">
+                <span class="badge-card">html</span>
+                <span class="badge-card">css</span>
+                <span class="badge-card">jav</span>
+                <span class="badge-card">javascript</span>
+                <span class="badge-card">javascript</span>
+                <span class="badge-card">javascript</span>
+                <span class="badge-card">javascript</span>
+                <span class="badge-card">javascript</span>
+              </div>
+
+              <div class="social-card-links">
+                <a href="#"><img src="./img/github_icon.svg" alt="github" /></a>
+                <a href="#"><img src="./img/go.svg" alt="go project" /></a>
+              </div>
+            </div>
+          </div>
+          <!-- card-4 -->
+          <div class="card-item">
+            <a href="#">
+              <img src="img/image1.png" alt="" />
+            </a>
+            <div class="description-card-container">
+              <p class="text-card-description">
+                Este projecto se basa en un diseño mobile first donde el cliente
+                necesitava una rapida converción
+              </p>
+              <div class="card-badges-container">
+                <span class="badge-card">html</span>
+                <span class="badge-card">css</span>
+                <span class="badge-card">jav</span>
+                <span class="badge-card">javascript</span>
+                <span class="badge-card">javascript</span>
+                <span class="badge-card">javascript</span>
+                <span class="badge-card">javascript</span>
+                <span class="badge-card">javascript</span>
+              </div>
+
+              <div class="social-card-links">
+                <a href="#"><img src="./img/github_icon.svg" alt="github" /></a>
+                <a href="#"><img src="./img/go.svg" alt="go project" /></a>
+              </div>
+            </div>
+          </div>
+          <!-- card-5 -->
+          <div class="card-item">
+            <a href="#">
+              <img src="img/image1.png" alt="" />
+            </a>
+            <div class="description-card-container">
+              <p class="text-card-description">
+                Este projecto se basa en un diseño mobile first donde el cliente
+                necesitava una rapida converción
+              </p>
+              <div class="card-badges-container">
+                <span class="badge-card">html</span>
+                <span class="badge-card">css</span>
+                <span class="badge-card">jav</span>
+                <span class="badge-card">javascript</span>
+                <span class="badge-card">javascript</span>
+                <span class="badge-card">javascript</span>
+                <span class="badge-card">javascript</span>
+                <span class="badge-card">javascript</span>
+              </div>
+
+              <div class="social-card-links">
+                <a href="#"><img src="./img/github_icon.svg" alt="github" /></a>
+                <a href="#"><img src="./img/go.svg" alt="go project" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-section">
+      <div class="container">
+        <div class="title-container">
+          <h2>About me</h2>
+        </div>
+        <p class="about-description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore,
+          libero. Facere nostrum suscipit voluptatem, voluptatibus doloremque
+          adipisci nemo ipsum, repudiandae, ducimus dignissimos unde quasi
+          doloribus corporis dolorem blanditiis architecto aliquid it amet
+          consectetur adipisicing elit. Labore, libero. Facere nostrum suscipit
+          voluptatem, voluptatibus doloremque adipisci nemo ipsum, repudiandae,
+          ducimus dignissimos unde quasi doloribus corporis dolorem blanditiis
+          architecto aliquid, it amet consectetur adipisicing elit. Labore,
+          libero. Facere nostrum suscipit voluptatem, voluptatibus doloremque
+          adipisci nemo ipsum, repudiandae, ducimus dignissimos unde quasi
+          doloribus corporis dolorem blanditiis architecto aliquid.
+        </p>
+        <button class="btn-about">Download CV</button>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills-section">
+      <div class="container">
+        <div class="title-container">
+          <h2>Skills</h2>
+        </div>
+        <div class="skills-badges-container">
+          <div class="front-badge badge-section">
+            <div class="badge-element">
+              <h3>HTML</h3>
+              <img src="./img/html.svg" alt="Html" />
+            </div>
+            <div class="badge-element">
+              <h3>CSS</h3>
+              <img src="./img/css.svg" alt="Css" />
+            </div>
+            <div class="badge-element">
+              <h3>JAVASCRIPT</h3>
+              <img src="./img/js.svg" alt="Javascript" />
+            </div>
+            <div class="badge-element">
+              <h3>REACT</h3>
+              <img src="./img/react.svg" alt="React" />
+            </div>
+          </div>
+          <div class="back-badge badge-section">
+            <div class="badge-element">
+              <h3>NODE</h3>
+              <img src="./img/node.svg" alt="Node" />
+            </div>
+            <div class="badge-element">
+              <h3>SQL</h3>
+              <img src="./img/sql.svg" alt="Sql" />
+            </div>
+            <div class="badge-element">
+              <h3>PYTHON</h3>
+              <img src="./img/python.svg" alt="Python" />
+            </div>
+          </div>
+          <div class="other-badge badge-section">
+            <div class="badge-element">
+              <h3>FIGMA</h3>
+              <img src="./img/figma.svg" alt="Figma" />
+            </div>
+            <div class="badge-element">
+              <h3>GIT</h3>
+              <img src="./img/git.svg" alt="Git" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section class="resume-section">
+      <div class="container">
+        <div class="title-container">
+          <h2>Resume</h2>
+        </div>
+        <div class="education-container">
+          <h3>Education</h3>
+          <div class="timeline-items">
+            <div class="timeline-item">
+              <h3>master en computación</h3>
+              <h4>Harvard University / 2015 - 2017</h4>
+            </div>
+            <div class="timeline-item">
+              <h3>master en computación</h3>
+              <h4>Harvard University / 2015 - 2017</h4>
+            </div>
+            <div class="timeline-item">
+              <h3>master en computación</h3>
+              <h4>Harvard University / 2015 - 2017</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-container">
+          <h3>My experience</h3>
+          <div class="timeline-items">
+            <div class="timeline-item">
+              <h3>master en computación</h3>
+              <h4>Harvard University / 2015 - 2017</h4>
+            </div>
+            <div class="timeline-item">
+              <h3>master en computación</h3>
+              <h4>Harvard University / 2015 - 2017</h4>
+            </div>
+            <div class="timeline-item">
+              <h3>master en computación</h3>
+              <h4>Harvard University / 2015 - 2017</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="title-container">
+          <h2>Contact</h2>
+        </div>
+        <div class="social-contact">
+          <img src="./img/linkedin_icon.svg" alt="linkedin" />
+          <img src="./img/github_icon.svg" alt="github" />
+          <img src="./img/email.svg" alt="email" />
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
   </body>
 </html>
