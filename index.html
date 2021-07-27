@@ -23,16 +23,50 @@
       <div class="container">
         <a href="#" class="logo">
           <span class="brackets">&lt/</span>
-          <span>CA</span>
+          <span class="text-logo">CA</span>
           <span class="brackets">&gt</span>
         </a>
 
         <div class="right-icons">
-          <img
-            src="./img/toggle-btn.svg"
-            class="btn-darkmode"
-            alt="darkmode button"
-          />
+          <button class="switch" id="switch">
+            <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
+              <path
+                d="M5.49948 9L4.57722 8.07775H2.92225V6.42295L2 5.5007L2.92225 4.57705V2.92225H4.57705L5.4993 2L6.42295 2.92225H8.07775V4.57705L9 5.50052L8.07775 6.42278V8.07775H6.42295L5.49948 9Z"
+                fill="#FBD85E"
+                stroke="#DB2F2F"
+                stroke-width="4"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <svg
+              class="moon"
+              width="13"
+              height="13"
+              viewBox="0 0 13 11"
+              fill="none"
+            >
+              <g clip-path="url(#clip0)">
+                <path
+                  d="M5.7555 0.0429734C3.17138 0.316123 1.15576 2.44557 1.15576 5.03213C1.15576 6.36272 1.70027 7.63882 2.66951 8.5797C3.63874 9.52057 4.9533 10.0492 6.32401 10.0492C8.98278 10.0492 11.1764 8.09809 11.4635 5.58957C11.5152 5.14919 11.0156 4.798 10.5792 5.06C10.1104 5.35046 9.56983 5.51328 9.01401 5.5314C8.45819 5.54952 7.90757 5.42229 7.41977 5.16302C6.93197 4.90375 6.52493 4.52197 6.24123 4.05763C5.95754 3.5933 5.80763 3.06347 5.80718 2.52361C5.80718 1.93272 5.9852 1.37527 6.28955 0.912591C6.54796 0.539102 6.26658 0.00395209 5.7555 0.0429734Z"
+                  fill="#D2CECF"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect
+                    width="11.5246"
+                    height="11.5246"
+                    fill="white"
+                    transform="translate(0.549194 0.0409546)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+
           <svg
             width="36"
             height="36"
@@ -63,42 +97,62 @@
           </svg>
           <ul class="nav-list">
             <!-- <li class="current"><a href="#">Home</a></li> -->
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#hero-section">Home</a></li>
+            <li><a href="#portfolo-section">Portfolio</a></li>
+            <li><a href="#about-section">About me</a></li>
+            <li><a href="#skills-section">Skills</a></li>
+            <li><a href="#resume-section">Resume</a></li>
+            <li><a href="#contact-section">Contact</a></li>
           </ul>
         </nav>
       </div>
     </div>
 
     <!-- HOME -->
-    <section class="hero-section">
+    <section class="hero-section" id="hero-section">
       <div class="container">
         <img
           class="image-profile"
-          src="./img/image-profile.jpg"
+          src="./img/image-profile.png"
           alt="image profile"
         />
         <div class="hero-description">
-          <h2 class="title-hero">- I'm Carlos Aguinaga</h2>
-          <h3 class="subtitle-hero">web developer</h3>
+          <h2 class="title-hero">Carlos Aguinaga</h2>
+          <h3 class="subtitle-hero"><span class="typed"></span></h3>
           <div class="social-hero">
             <a href="#">
-              <img
-                src="./img/linkedin_icon.svg"
-                class="icon-linkedin"
-                alt="linkedin"
-              />
+              <svg
+                width="29"
+                height="29"
+                viewBox="0 0 29 29"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="social-hero-icons"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.20837 3.42926C1.20837 2.84024 1.44236 2.27534 1.85887 1.85884C2.27537 1.44234 2.84027 1.20835 3.42929 1.20835H25.5684C25.8603 1.20787 26.1494 1.26497 26.4192 1.37639C26.689 1.4878 26.9342 1.65133 27.1407 1.85763C27.3472 2.06392 27.511 2.30892 27.6227 2.57861C27.7345 2.84829 27.7919 3.13736 27.7917 3.42926V25.5683C27.792 25.8603 27.7348 26.1495 27.6232 26.4193C27.5117 26.6891 27.348 26.9343 27.1416 27.1408C26.9353 27.3473 26.6902 27.511 26.4204 27.6227C26.1507 27.7344 25.8615 27.7918 25.5696 27.7917H3.42929C3.13753 27.7917 2.84864 27.7342 2.5791 27.6225C2.30957 27.5108 2.06469 27.3471 1.85844 27.1408C1.65219 26.9344 1.48863 26.6894 1.37708 26.4198C1.26554 26.1502 1.20822 25.8613 1.20837 25.5696V3.42926ZM11.7305 11.3438H15.3302V13.1515C15.8497 12.1123 17.1789 11.1771 19.1763 11.1771C23.0055 11.1771 23.913 13.247 23.913 17.0448V24.0797H20.0378V17.9099C20.0378 15.747 19.5182 14.5266 18.1987 14.5266C16.3681 14.5266 15.6069 15.8425 15.6069 17.9099V24.0797H11.7305V11.3438ZM5.08471 23.9141H8.96104V11.1771H5.08471V23.9129V23.9141ZM9.51567 7.02285C9.52297 7.35474 9.46392 7.68476 9.34196 7.99352C9.22 8.30228 9.03759 8.58357 8.80545 8.82089C8.5733 9.0582 8.29609 9.24675 7.99009 9.37548C7.68409 9.50421 7.35546 9.57052 7.02348 9.57052C6.6915 9.57052 6.36287 9.50421 6.05687 9.37548C5.75086 9.24675 5.47366 9.0582 5.24151 8.82089C5.00937 8.58357 4.82696 8.30228 4.705 7.99352C4.58304 7.68476 4.52398 7.35474 4.53129 7.02285C4.54564 6.37138 4.81451 5.75143 5.28032 5.29576C5.74613 4.84009 6.37185 4.58493 7.02348 4.58493C7.6751 4.58493 8.30083 4.84009 8.76664 5.29576C9.23245 5.75143 9.50132 6.37138 9.51567 7.02285Z"
+                  fill="black"
+                />
+              </svg>
             </a>
             <a href="#">
-              <img
-                src="./img/github_icon.svg"
-                class="icon-github"
-                alt="github"
-              />
+              <svg
+                width="29"
+                height="29"
+                viewBox="0 0 29 29"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="social-hero-icons"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M14.5 0C6.48875 0 0 6.48875 0 14.5C0 20.9163 4.15063 26.3356 9.91438 28.2569C10.6394 28.3838 10.9113 27.9488 10.9113 27.5681C10.9113 27.2238 10.8931 26.0819 10.8931 24.8675C7.25 25.5381 6.3075 23.9794 6.0175 23.1638C5.85438 22.7469 5.1475 21.46 4.53125 21.1156C4.02375 20.8438 3.29875 20.1731 4.51312 20.155C5.655 20.1369 6.47062 21.2063 6.7425 21.6413C8.0475 23.8344 10.1319 23.2181 10.9656 22.8375C11.0925 21.895 11.4731 21.2606 11.89 20.8981C8.66375 20.5356 5.2925 19.285 5.2925 13.7388C5.2925 12.1619 5.85438 10.8569 6.77875 9.84188C6.63375 9.47938 6.12625 7.99313 6.92375 5.99938C6.92375 5.99938 8.13812 5.61875 10.9113 7.48563C12.0712 7.15938 13.3038 6.99625 14.5363 6.99625C15.7688 6.99625 17.0012 7.15938 18.1613 7.48563C20.9344 5.60063 22.1488 5.99938 22.1488 5.99938C22.9463 7.99313 22.4388 9.47938 22.2938 9.84188C23.2181 10.8569 23.78 12.1438 23.78 13.7388C23.78 19.3031 20.3906 20.5356 17.1644 20.8981C17.69 21.3513 18.1431 22.2213 18.1431 23.5806C18.1431 25.52 18.125 27.0788 18.125 27.5681C18.125 27.9488 18.3969 28.4019 19.1219 28.2569C22.0003 27.285 24.5016 25.435 26.2736 22.9672C28.0456 20.4994 28.9991 17.5381 29 14.5C29 6.48875 22.5113 0 14.5 0Z"
+                  fill="black"
+                />
+              </svg>
             </a>
           </div>
         </div>
@@ -106,9 +160,23 @@
     </section>
 
     <!-- PORTFOLIO -->
-    <section class="portfolo-section">
+    <section class="portfolo-section" id="portfolo-section">
       <div class="container d-fex align-center">
         <div class="title-container">
+          <svg
+            class="frame-title"
+            width="369"
+            height="110"
+            viewBox="0 0 369 110"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M366 3H3V109H287.579L366 171V3Z"
+              stroke="black"
+              stroke-width="10"
+            />
+          </svg>
           <h2>Portfolio</h2>
         </div>
         <div class="cards-grid">
@@ -120,8 +188,8 @@
               </a>
               <div class="description-card-container">
                 <p class="text-card-description">
-                  Este projecto se basa en un diseño mobile first donde el cliente
-                  necesitava una rapida converción
+                  Este projecto se basa en un diseño mobile first donde el
+                  cliente necesitava una rapida converción
                 </p>
                 <div class="card-badges-container">
                   <span class="badge-card">html</span>
@@ -133,8 +201,55 @@
               </div>
             </div>
             <div class="social-card-links">
-              <a href="#"><img src="./img/github_icon.svg" alt="github" /></a>
-              <a href="#"><img src="./img/go.svg" alt="go project" /></a>
+              <a href="#">
+                <svg
+                  class="social-links-icon-1"
+                  width="29"
+                  height="29"
+                  viewBox="0 0 29 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M14.5 0C6.48875 0 0 6.48875 0 14.5C0 20.9163 4.15063 26.3356 9.91438 28.2569C10.6394 28.3838 10.9113 27.9488 10.9113 27.5681C10.9113 27.2238 10.8931 26.0819 10.8931 24.8675C7.25 25.5381 6.3075 23.9794 6.0175 23.1638C5.85438 22.7469 5.1475 21.46 4.53125 21.1156C4.02375 20.8438 3.29875 20.1731 4.51312 20.155C5.655 20.1369 6.47062 21.2063 6.7425 21.6413C8.0475 23.8344 10.1319 23.2181 10.9656 22.8375C11.0925 21.895 11.4731 21.2606 11.89 20.8981C8.66375 20.5356 5.2925 19.285 5.2925 13.7388C5.2925 12.1619 5.85438 10.8569 6.77875 9.84188C6.63375 9.47938 6.12625 7.99313 6.92375 5.99938C6.92375 5.99938 8.13812 5.61875 10.9113 7.48563C12.0712 7.15938 13.3038 6.99625 14.5363 6.99625C15.7688 6.99625 17.0012 7.15938 18.1613 7.48563C20.9344 5.60063 22.1488 5.99938 22.1488 5.99938C22.9463 7.99313 22.4388 9.47938 22.2938 9.84188C23.2181 10.8569 23.78 12.1438 23.78 13.7388C23.78 19.3031 20.3906 20.5356 17.1644 20.8981C17.69 21.3513 18.1431 22.2213 18.1431 23.5806C18.1431 25.52 18.125 27.0788 18.125 27.5681C18.125 27.9488 18.3969 28.4019 19.1219 28.2569C22.0003 27.285 24.5016 25.435 26.2736 22.9672C28.0456 20.4994 28.9991 17.5381 29 14.5C29 6.48875 22.5113 0 14.5 0Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  class="social-links-icon-2"
+                  width="29"
+                  height="29"
+                  viewBox="0 0 19 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 4H3C2.46957 4 1.96086 4.21071 1.58579 4.58579C1.21071 4.96086 1 5.46957 1 6V15C1 15.5304 1.21071 16.0391 1.58579 16.4142C1.96086 16.7893 2.46957 17 3 17H12C12.5304 17 13.0391 16.7893 13.4142 16.4142C13.7893 16.0391 14 15.5304 14 15V10"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7 11L17 1"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 1H17V6"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
             </div>
           </div>
           <!-- card-1 -->
@@ -145,8 +260,8 @@
               </a>
               <div class="description-card-container">
                 <p class="text-card-description">
-                  Este projecto se basa en un diseño mobile first donde el cliente
-                  necesitava una rapida converción
+                  Este projecto se basa en un diseño mobile first donde el
+                  cliente necesitava una rapida converción
                 </p>
                 <div class="card-badges-container">
                   <span class="badge-card">html</span>
@@ -158,8 +273,55 @@
               </div>
             </div>
             <div class="social-card-links">
-              <a href="#"><img src="./img/github_icon.svg" alt="github" /></a>
-              <a href="#"><img src="./img/go.svg" alt="go project" /></a>
+              <a href="#">
+                <svg
+                  class="social-links-icon-1"
+                  width="29"
+                  height="29"
+                  viewBox="0 0 29 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M14.5 0C6.48875 0 0 6.48875 0 14.5C0 20.9163 4.15063 26.3356 9.91438 28.2569C10.6394 28.3838 10.9113 27.9488 10.9113 27.5681C10.9113 27.2238 10.8931 26.0819 10.8931 24.8675C7.25 25.5381 6.3075 23.9794 6.0175 23.1638C5.85438 22.7469 5.1475 21.46 4.53125 21.1156C4.02375 20.8438 3.29875 20.1731 4.51312 20.155C5.655 20.1369 6.47062 21.2063 6.7425 21.6413C8.0475 23.8344 10.1319 23.2181 10.9656 22.8375C11.0925 21.895 11.4731 21.2606 11.89 20.8981C8.66375 20.5356 5.2925 19.285 5.2925 13.7388C5.2925 12.1619 5.85438 10.8569 6.77875 9.84188C6.63375 9.47938 6.12625 7.99313 6.92375 5.99938C6.92375 5.99938 8.13812 5.61875 10.9113 7.48563C12.0712 7.15938 13.3038 6.99625 14.5363 6.99625C15.7688 6.99625 17.0012 7.15938 18.1613 7.48563C20.9344 5.60063 22.1488 5.99938 22.1488 5.99938C22.9463 7.99313 22.4388 9.47938 22.2938 9.84188C23.2181 10.8569 23.78 12.1438 23.78 13.7388C23.78 19.3031 20.3906 20.5356 17.1644 20.8981C17.69 21.3513 18.1431 22.2213 18.1431 23.5806C18.1431 25.52 18.125 27.0788 18.125 27.5681C18.125 27.9488 18.3969 28.4019 19.1219 28.2569C22.0003 27.285 24.5016 25.435 26.2736 22.9672C28.0456 20.4994 28.9991 17.5381 29 14.5C29 6.48875 22.5113 0 14.5 0Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  class="social-links-icon-2"
+                  width="29"
+                  height="29"
+                  viewBox="0 0 19 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 4H3C2.46957 4 1.96086 4.21071 1.58579 4.58579C1.21071 4.96086 1 5.46957 1 6V15C1 15.5304 1.21071 16.0391 1.58579 16.4142C1.96086 16.7893 2.46957 17 3 17H12C12.5304 17 13.0391 16.7893 13.4142 16.4142C13.7893 16.0391 14 15.5304 14 15V10"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7 11L17 1"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 1H17V6"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
             </div>
           </div>
           <!-- card-1 -->
@@ -170,8 +332,8 @@
               </a>
               <div class="description-card-container">
                 <p class="text-card-description">
-                  Este projecto se basa en un diseño mobile first donde el cliente
-                  necesitava una rapida converción
+                  Este projecto se basa en un diseño mobile first donde el
+                  cliente necesitava una rapida converción
                 </p>
                 <div class="card-badges-container">
                   <span class="badge-card">html</span>
@@ -183,8 +345,55 @@
               </div>
             </div>
             <div class="social-card-links">
-              <a href="#"><img src="./img/github_icon.svg" alt="github" /></a>
-              <a href="#"><img src="./img/go.svg" alt="go project" /></a>
+              <a href="#">
+                <svg
+                  class="social-links-icon-1"
+                  width="29"
+                  height="29"
+                  viewBox="0 0 29 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M14.5 0C6.48875 0 0 6.48875 0 14.5C0 20.9163 4.15063 26.3356 9.91438 28.2569C10.6394 28.3838 10.9113 27.9488 10.9113 27.5681C10.9113 27.2238 10.8931 26.0819 10.8931 24.8675C7.25 25.5381 6.3075 23.9794 6.0175 23.1638C5.85438 22.7469 5.1475 21.46 4.53125 21.1156C4.02375 20.8438 3.29875 20.1731 4.51312 20.155C5.655 20.1369 6.47062 21.2063 6.7425 21.6413C8.0475 23.8344 10.1319 23.2181 10.9656 22.8375C11.0925 21.895 11.4731 21.2606 11.89 20.8981C8.66375 20.5356 5.2925 19.285 5.2925 13.7388C5.2925 12.1619 5.85438 10.8569 6.77875 9.84188C6.63375 9.47938 6.12625 7.99313 6.92375 5.99938C6.92375 5.99938 8.13812 5.61875 10.9113 7.48563C12.0712 7.15938 13.3038 6.99625 14.5363 6.99625C15.7688 6.99625 17.0012 7.15938 18.1613 7.48563C20.9344 5.60063 22.1488 5.99938 22.1488 5.99938C22.9463 7.99313 22.4388 9.47938 22.2938 9.84188C23.2181 10.8569 23.78 12.1438 23.78 13.7388C23.78 19.3031 20.3906 20.5356 17.1644 20.8981C17.69 21.3513 18.1431 22.2213 18.1431 23.5806C18.1431 25.52 18.125 27.0788 18.125 27.5681C18.125 27.9488 18.3969 28.4019 19.1219 28.2569C22.0003 27.285 24.5016 25.435 26.2736 22.9672C28.0456 20.4994 28.9991 17.5381 29 14.5C29 6.48875 22.5113 0 14.5 0Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  class="social-links-icon-2"
+                  width="29"
+                  height="29"
+                  viewBox="0 0 19 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 4H3C2.46957 4 1.96086 4.21071 1.58579 4.58579C1.21071 4.96086 1 5.46957 1 6V15C1 15.5304 1.21071 16.0391 1.58579 16.4142C1.96086 16.7893 2.46957 17 3 17H12C12.5304 17 13.0391 16.7893 13.4142 16.4142C13.7893 16.0391 14 15.5304 14 15V10"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7 11L17 1"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 1H17V6"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
             </div>
           </div>
           <!-- card-1 -->
@@ -195,8 +404,8 @@
               </a>
               <div class="description-card-container">
                 <p class="text-card-description">
-                  Este projecto se basa en un diseño mobile first donde el cliente
-                  necesitava una rapida converción
+                  Este projecto se basa en un diseño mobile first donde el
+                  cliente necesitava una rapida converción
                 </p>
                 <div class="card-badges-container">
                   <span class="badge-card">html</span>
@@ -208,8 +417,55 @@
               </div>
             </div>
             <div class="social-card-links">
-              <a href="#"><img src="./img/github_icon.svg" alt="github" /></a>
-              <a href="#"><img src="./img/go.svg" alt="go project" /></a>
+              <a href="#">
+                <svg
+                  class="social-links-icon-1"
+                  width="29"
+                  height="29"
+                  viewBox="0 0 29 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M14.5 0C6.48875 0 0 6.48875 0 14.5C0 20.9163 4.15063 26.3356 9.91438 28.2569C10.6394 28.3838 10.9113 27.9488 10.9113 27.5681C10.9113 27.2238 10.8931 26.0819 10.8931 24.8675C7.25 25.5381 6.3075 23.9794 6.0175 23.1638C5.85438 22.7469 5.1475 21.46 4.53125 21.1156C4.02375 20.8438 3.29875 20.1731 4.51312 20.155C5.655 20.1369 6.47062 21.2063 6.7425 21.6413C8.0475 23.8344 10.1319 23.2181 10.9656 22.8375C11.0925 21.895 11.4731 21.2606 11.89 20.8981C8.66375 20.5356 5.2925 19.285 5.2925 13.7388C5.2925 12.1619 5.85438 10.8569 6.77875 9.84188C6.63375 9.47938 6.12625 7.99313 6.92375 5.99938C6.92375 5.99938 8.13812 5.61875 10.9113 7.48563C12.0712 7.15938 13.3038 6.99625 14.5363 6.99625C15.7688 6.99625 17.0012 7.15938 18.1613 7.48563C20.9344 5.60063 22.1488 5.99938 22.1488 5.99938C22.9463 7.99313 22.4388 9.47938 22.2938 9.84188C23.2181 10.8569 23.78 12.1438 23.78 13.7388C23.78 19.3031 20.3906 20.5356 17.1644 20.8981C17.69 21.3513 18.1431 22.2213 18.1431 23.5806C18.1431 25.52 18.125 27.0788 18.125 27.5681C18.125 27.9488 18.3969 28.4019 19.1219 28.2569C22.0003 27.285 24.5016 25.435 26.2736 22.9672C28.0456 20.4994 28.9991 17.5381 29 14.5C29 6.48875 22.5113 0 14.5 0Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  class="social-links-icon-2"
+                  width="29"
+                  height="29"
+                  viewBox="0 0 19 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 4H3C2.46957 4 1.96086 4.21071 1.58579 4.58579C1.21071 4.96086 1 5.46957 1 6V15C1 15.5304 1.21071 16.0391 1.58579 16.4142C1.96086 16.7893 2.46957 17 3 17H12C12.5304 17 13.0391 16.7893 13.4142 16.4142C13.7893 16.0391 14 15.5304 14 15V10"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7 11L17 1"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 1H17V6"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
             </div>
           </div>
           <!-- card-1 -->
@@ -220,8 +476,8 @@
               </a>
               <div class="description-card-container">
                 <p class="text-card-description">
-                  Este projecto se basa en un diseño mobile first donde el cliente
-                  necesitava una rapida converción
+                  Este projecto se basa en un diseño mobile first donde el
+                  cliente necesitava una rapida converción
                 </p>
                 <div class="card-badges-container">
                   <span class="badge-card">html</span>
@@ -233,8 +489,55 @@
               </div>
             </div>
             <div class="social-card-links">
-              <a href="#"><img src="./img/github_icon.svg" alt="github" /></a>
-              <a href="#"><img src="./img/go.svg" alt="go project" /></a>
+              <a href="#">
+                <svg
+                  class="social-links-icon-1"
+                  width="29"
+                  height="29"
+                  viewBox="0 0 29 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M14.5 0C6.48875 0 0 6.48875 0 14.5C0 20.9163 4.15063 26.3356 9.91438 28.2569C10.6394 28.3838 10.9113 27.9488 10.9113 27.5681C10.9113 27.2238 10.8931 26.0819 10.8931 24.8675C7.25 25.5381 6.3075 23.9794 6.0175 23.1638C5.85438 22.7469 5.1475 21.46 4.53125 21.1156C4.02375 20.8438 3.29875 20.1731 4.51312 20.155C5.655 20.1369 6.47062 21.2063 6.7425 21.6413C8.0475 23.8344 10.1319 23.2181 10.9656 22.8375C11.0925 21.895 11.4731 21.2606 11.89 20.8981C8.66375 20.5356 5.2925 19.285 5.2925 13.7388C5.2925 12.1619 5.85438 10.8569 6.77875 9.84188C6.63375 9.47938 6.12625 7.99313 6.92375 5.99938C6.92375 5.99938 8.13812 5.61875 10.9113 7.48563C12.0712 7.15938 13.3038 6.99625 14.5363 6.99625C15.7688 6.99625 17.0012 7.15938 18.1613 7.48563C20.9344 5.60063 22.1488 5.99938 22.1488 5.99938C22.9463 7.99313 22.4388 9.47938 22.2938 9.84188C23.2181 10.8569 23.78 12.1438 23.78 13.7388C23.78 19.3031 20.3906 20.5356 17.1644 20.8981C17.69 21.3513 18.1431 22.2213 18.1431 23.5806C18.1431 25.52 18.125 27.0788 18.125 27.5681C18.125 27.9488 18.3969 28.4019 19.1219 28.2569C22.0003 27.285 24.5016 25.435 26.2736 22.9672C28.0456 20.4994 28.9991 17.5381 29 14.5C29 6.48875 22.5113 0 14.5 0Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  class="social-links-icon-2"
+                  width="29"
+                  height="29"
+                  viewBox="0 0 19 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 4H3C2.46957 4 1.96086 4.21071 1.58579 4.58579C1.21071 4.96086 1 5.46957 1 6V15C1 15.5304 1.21071 16.0391 1.58579 16.4142C1.96086 16.7893 2.46957 17 3 17H12C12.5304 17 13.0391 16.7893 13.4142 16.4142C13.7893 16.0391 14 15.5304 14 15V10"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7 11L17 1"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 1H17V6"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
             </div>
           </div>
           <!-- card-1 -->
@@ -245,8 +548,8 @@
               </a>
               <div class="description-card-container">
                 <p class="text-card-description">
-                  Este projecto se basa en un diseño mobile first donde el cliente
-                  necesitava una rapida converción
+                  Este projecto se basa en un diseño mobile first donde el
+                  cliente necesitava una rapida converción
                 </p>
                 <div class="card-badges-container">
                   <span class="badge-card">html</span>
@@ -258,8 +561,55 @@
               </div>
             </div>
             <div class="social-card-links">
-              <a href="#"><img src="./img/github_icon.svg" alt="github" /></a>
-              <a href="#"><img src="./img/go.svg" alt="go project" /></a>
+              <a href="#">
+                <svg
+                  class="social-links-icon-1"
+                  width="29"
+                  height="29"
+                  viewBox="0 0 29 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M14.5 0C6.48875 0 0 6.48875 0 14.5C0 20.9163 4.15063 26.3356 9.91438 28.2569C10.6394 28.3838 10.9113 27.9488 10.9113 27.5681C10.9113 27.2238 10.8931 26.0819 10.8931 24.8675C7.25 25.5381 6.3075 23.9794 6.0175 23.1638C5.85438 22.7469 5.1475 21.46 4.53125 21.1156C4.02375 20.8438 3.29875 20.1731 4.51312 20.155C5.655 20.1369 6.47062 21.2063 6.7425 21.6413C8.0475 23.8344 10.1319 23.2181 10.9656 22.8375C11.0925 21.895 11.4731 21.2606 11.89 20.8981C8.66375 20.5356 5.2925 19.285 5.2925 13.7388C5.2925 12.1619 5.85438 10.8569 6.77875 9.84188C6.63375 9.47938 6.12625 7.99313 6.92375 5.99938C6.92375 5.99938 8.13812 5.61875 10.9113 7.48563C12.0712 7.15938 13.3038 6.99625 14.5363 6.99625C15.7688 6.99625 17.0012 7.15938 18.1613 7.48563C20.9344 5.60063 22.1488 5.99938 22.1488 5.99938C22.9463 7.99313 22.4388 9.47938 22.2938 9.84188C23.2181 10.8569 23.78 12.1438 23.78 13.7388C23.78 19.3031 20.3906 20.5356 17.1644 20.8981C17.69 21.3513 18.1431 22.2213 18.1431 23.5806C18.1431 25.52 18.125 27.0788 18.125 27.5681C18.125 27.9488 18.3969 28.4019 19.1219 28.2569C22.0003 27.285 24.5016 25.435 26.2736 22.9672C28.0456 20.4994 28.9991 17.5381 29 14.5C29 6.48875 22.5113 0 14.5 0Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  class="social-links-icon-2"
+                  width="29"
+                  height="29"
+                  viewBox="0 0 19 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 4H3C2.46957 4 1.96086 4.21071 1.58579 4.58579C1.21071 4.96086 1 5.46957 1 6V15C1 15.5304 1.21071 16.0391 1.58579 16.4142C1.96086 16.7893 2.46957 17 3 17H12C12.5304 17 13.0391 16.7893 13.4142 16.4142C13.7893 16.0391 14 15.5304 14 15V10"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7 11L17 1"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 1H17V6"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
             </div>
           </div>
           <!-- card-1 -->
@@ -270,8 +620,8 @@
               </a>
               <div class="description-card-container">
                 <p class="text-card-description">
-                  Este projecto se basa en un diseño mobile first donde el cliente
-                  necesitava una rapida converción
+                  Este projecto se basa en un diseño mobile first donde el
+                  cliente necesitava una rapida converción
                 </p>
                 <div class="card-badges-container">
                   <span class="badge-card">html</span>
@@ -283,21 +633,79 @@
               </div>
             </div>
             <div class="social-card-links">
-              <a href="#"><img src="./img/github_icon.svg" alt="github" /></a>
-              <a href="#"><img src="./img/go.svg" alt="go project" /></a>
+              <a href="#">
+                <svg
+                  class="social-links-icon-1"
+                  width="29"
+                  height="29"
+                  viewBox="0 0 29 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M14.5 0C6.48875 0 0 6.48875 0 14.5C0 20.9163 4.15063 26.3356 9.91438 28.2569C10.6394 28.3838 10.9113 27.9488 10.9113 27.5681C10.9113 27.2238 10.8931 26.0819 10.8931 24.8675C7.25 25.5381 6.3075 23.9794 6.0175 23.1638C5.85438 22.7469 5.1475 21.46 4.53125 21.1156C4.02375 20.8438 3.29875 20.1731 4.51312 20.155C5.655 20.1369 6.47062 21.2063 6.7425 21.6413C8.0475 23.8344 10.1319 23.2181 10.9656 22.8375C11.0925 21.895 11.4731 21.2606 11.89 20.8981C8.66375 20.5356 5.2925 19.285 5.2925 13.7388C5.2925 12.1619 5.85438 10.8569 6.77875 9.84188C6.63375 9.47938 6.12625 7.99313 6.92375 5.99938C6.92375 5.99938 8.13812 5.61875 10.9113 7.48563C12.0712 7.15938 13.3038 6.99625 14.5363 6.99625C15.7688 6.99625 17.0012 7.15938 18.1613 7.48563C20.9344 5.60063 22.1488 5.99938 22.1488 5.99938C22.9463 7.99313 22.4388 9.47938 22.2938 9.84188C23.2181 10.8569 23.78 12.1438 23.78 13.7388C23.78 19.3031 20.3906 20.5356 17.1644 20.8981C17.69 21.3513 18.1431 22.2213 18.1431 23.5806C18.1431 25.52 18.125 27.0788 18.125 27.5681C18.125 27.9488 18.3969 28.4019 19.1219 28.2569C22.0003 27.285 24.5016 25.435 26.2736 22.9672C28.0456 20.4994 28.9991 17.5381 29 14.5C29 6.48875 22.5113 0 14.5 0Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  class="social-links-icon-2"
+                  width="29"
+                  height="29"
+                  viewBox="0 0 19 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 4H3C2.46957 4 1.96086 4.21071 1.58579 4.58579C1.21071 4.96086 1 5.46957 1 6V15C1 15.5304 1.21071 16.0391 1.58579 16.4142C1.96086 16.7893 2.46957 17 3 17H12C12.5304 17 13.0391 16.7893 13.4142 16.4142C13.7893 16.0391 14 15.5304 14 15V10"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7 11L17 1"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 1H17V6"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
             </div>
           </div>
-
-
-          
         </div>
       </div>
     </section>
 
     <!-- ABOUT -->
-    <section class="about-section">
+    <section class="about-section" id="about-section">
       <div class="container">
         <div class="title-container">
+          <svg
+            class="frame-title"
+            width="369"
+            height="110"
+            viewBox="0 0 369 110"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M366 3H3V109H287.579L366 171V3Z"
+              stroke="black"
+              stroke-width="10"
+            />
+          </svg>
           <h2>About me</h2>
         </div>
         <p class="about-description">
@@ -313,14 +721,28 @@
           adipisci nemo ipsum, repudiandae, ducimus dignissimos unde quasi
           doloribus corporis dolorem blanditiis architecto aliquid.
         </p>
-        <button class="btn-about">Download CV</button>
+        <a href="#" class="btn-about">Download CV</a>
       </div>
     </section>
 
     <!-- SKILLS -->
-    <section class="skills-section">
+    <section class="skills-section" id="skills-section">
       <div class="container">
         <div class="title-container">
+          <svg
+            class="frame-title"
+            width="369"
+            height="110"
+            viewBox="0 0 369 110"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M366 3H3V109H287.579L366 171V3Z"
+              stroke="black"
+              stroke-width="10"
+            />
+          </svg>
           <h2>Skills</h2>
         </div>
         <div class="skills-badges-container">
@@ -371,10 +793,24 @@
     </section>
 
     <!-- RESUME -->
-    <section class="resume-section">
+    <section class="resume-section" id="resume-section">
       <div class="container">
         <div class="title-container">
-          <h2>Resume</h2>
+          <svg
+            class="frame-title"
+            width="369"
+            height="110"
+            viewBox="0 0 369 110"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M366 3H3V109H287.579L366 171V3Z"
+              stroke="black"
+              stroke-width="10"
+            />
+          </svg>
+          <h2 class="resume-title">Resume</h2>
         </div>
         <div class="education-container">
           <h3>Education</h3>
@@ -415,9 +851,23 @@
     </section>
 
     <!-- CONTACT -->
-    <section class="contact-section">
+    <section class="contact-section" id="contact-section">
       <div class="container">
         <div class="title-container">
+          <svg
+            class="frame-title"
+            width="369"
+            height="110"
+            viewBox="0 0 369 110"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M366 3H3V109H287.579L366 171V3Z"
+              stroke="black"
+              stroke-width="10"
+            />
+          </svg>
           <h2>Contact</h2>
         </div>
         <div class="social-contact">
@@ -428,6 +878,7 @@
       </div>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="script.js"></script>
   </body>
 </html>
