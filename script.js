@@ -22,7 +22,7 @@ linkMenu.addEventListener("click", () => {
 const typed = new Typed(".typed", {
   strings: [
     '<i class="typed-skill">Developer</i>',
-    '<i class="typed-skill">UX/UI</i>',
+    '<i class="typed-skill">Programmer</i>',
     '<i class="typed-skill">Fullstack</i>',
   ],
   // stringsElement: "#cadenas-texto", // ID del elemento que contiene cadenas de texto a mostrar.
