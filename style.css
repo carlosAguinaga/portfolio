@@ -261,6 +261,12 @@ svg#mobile-exit {
 }
 
 /* PORTFOLIO */
+.portafoli-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .portfolo-section .title-container {
   margin-top: 15px;
 }
@@ -280,7 +286,7 @@ svg#mobile-exit {
   max-width: 350px;
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: transform .3s;
+  transition: transform 0.3s;
   background-color: white;
   margin: 20px;
   height: 500px;
@@ -494,11 +500,9 @@ svg#mobile-exit {
   }
 }
 
-
-
 @media (min-width: 1000px) {
   /* horizontal menu */
-   .right-icons {
+  .right-icons {
     order: 2;
   }
   .mobile-menu,
@@ -519,16 +523,14 @@ svg#mobile-exit {
     align-items: center;
     margin: 0;
   }
-  .navbar .nav-list li{
+  .navbar .nav-list li {
     margin: 0;
     margin-right: 10px;
   }
-  .navbar .nav-list li a{
+  .navbar .nav-list li a {
     margin: 0;
   }
 }
-
-
 
 @media (min-width: 1024px) {
   .left-triangle {
