@@ -42,6 +42,9 @@ body.darkmode .frame-title path {
 body.darkmode .card-item {
   background-color: var(--lightdark);
 }
+body.darkmode .card-item-title {
+  color: var(--dark-secondary);
+}
 body.darkmode .text-card-description {
   color: white;
 }
@@ -289,7 +292,7 @@ svg#mobile-exit {
   transition: transform 0.3s;
   background-color: white;
   margin: 20px;
-  height: 500px;
+  height: 550px;
 }
 .card-item:hover {
   transform: scale(1.05);
@@ -308,6 +311,10 @@ svg#mobile-exit {
   padding: 15px;
   width: 100%;
   overflow: hidden;
+}
+.card-item-title {
+  color: black;
+  margin-bottom: 3px;
 }
 .text-card-description {
   margin-bottom: 10px;
