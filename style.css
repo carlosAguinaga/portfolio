@@ -18,6 +18,9 @@ body.darkmode {
 body.darkmode .mobile-menu path {
   fill: white;
 }
+body.darkmode nav ul li a {
+  color: white;
+}
 body.darkmode .text-logo {
   color: var(--primary-color);
 }
