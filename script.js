@@ -3,7 +3,10 @@ const mobileBtn = document.getElementById("mobile-cta");
 const nav = document.querySelector("nav");
 const mobileBtnExit = document.getElementById("mobile-exit");
 const linkMenu = document.querySelector("ul.nav-list");
+const accordion = document.getElementsByClassName('contentBx');
 
+
+// Menu actions
 mobileBtn.addEventListener("click", () => {
   nav.classList.add("menu-btn");
 });
@@ -12,10 +15,17 @@ mobileBtnExit.addEventListener("click", () => {
   nav.classList.remove("menu-btn");
 });
 
-
 linkMenu.addEventListener("click", () => {
   nav.classList.remove("menu-btn");
 });
+
+//accordion action
+for (const element of accordion) {
+  element.addEventListener('click', function() {
+    this.classList.toggle('active')
+  })
+}
+
 
 
 // typed.js
