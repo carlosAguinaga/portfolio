@@ -386,7 +386,7 @@ svg#mobile-exit {
   padding-top: 20px;
   padding-bottom: 10px;
   margin-bottom: 20px;
-  font-size: 30px;
+  font-size: 25px;
 }
 .btn-cv {
   color: black;
@@ -422,11 +422,19 @@ svg#mobile-exit {
 .resume-section .container {
   padding-top: 10px;
   padding-bottom: 40px;
+
 }
 .education-container {
   margin-top: 40px;
   margin-bottom: 70px;
 }
+.education-container .education-title{
+  font-size: 30px;
+}
+.experience-container .experience-title{
+  font-size: 25px;
+}
+
 .timeline-items {
   border-left: solid 3px var(--primary-color);
   padding-left: 16px;
