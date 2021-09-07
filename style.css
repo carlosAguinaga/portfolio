@@ -7,8 +7,17 @@
 }
 body {
   font-family: Roboto, sans-serif;
-  position: relative;
   transition: 0.8s ease all;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.main-container{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 /* DARKMODE */
@@ -95,7 +104,7 @@ body.darkmode .timeline-item {
 .title-container > h2 {
   text-align: center;
   position: absolute;
-  font-weight: 300;
+  font-weight: bold;
   font-size: 25px;
   top: 0;
   left: 50%;
@@ -156,13 +165,16 @@ nav ul li {
 nav ul li a {
   margin-top: 10px;
   color: white;
-  font-weight: 300;
+  font-weight: 400;
   display: block;
   font-size: 1.3em;
   padding: 4px;
+  transition: 0.3s;
 }
 nav ul li a:hover {
   font-weight: bold;
+  font-size: 25px;
+  /* transform: scale(1.01); */
 }
 svg#mobile-exit {
   margin: 0.5em;
@@ -235,7 +247,9 @@ svg#mobile-exit {
 }
 
 .hero-section .title-hero {
-  font-size: 30px;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 5px;
 }
 
 .hero-section .image-profile {
@@ -252,9 +266,6 @@ svg#mobile-exit {
   align-items: center;
   padding: 10px;
 }
-.title-hero {
-  margin-bottom: 5px;
-}
 .subtitle-hero {
   margin-bottom: 20px;
   font-size: 30px;
@@ -265,6 +276,12 @@ svg#mobile-exit {
 }
 .social-hero a {
   margin: 0 15px;
+}
+.social-hero a svg {
+  transition: transform 0.3s;
+}
+.social-hero a svg:hover {
+  transform: scale(1.3);
 }
 
 /* PORTFOLIO */
@@ -344,9 +361,17 @@ svg#mobile-exit {
   justify-content: space-around;
   margin-bottom: 10px;
 }
-.social-card-links img {
-  width: 30px;
+.social-card-links svg {
+  transition: 0.3s;
 }
+.social-card-links svg:hover {
+  transform: scale(1.3);
+}
+
+
+/* .social-card-links img {
+  width: 30px;
+} */
 
 /* ABOUT ME */
 .about-section {
@@ -360,11 +385,10 @@ svg#mobile-exit {
 .about-description {
   padding-top: 20px;
   padding-bottom: 10px;
-}
-.about-description {
   margin-bottom: 20px;
+  font-size: 30px;
 }
-.btn-about {
+.btn-cv {
   color: black;
   width: max-content;
   display: block;
@@ -374,6 +398,10 @@ svg#mobile-exit {
   border: solid 3px black;
   padding: 10px;
   cursor: pointer;
+  transition: 0.3s;
+}
+.btn-cv:hover {
+  transform: scale(1.1);
 }
 
 /* SKILLS */
@@ -444,6 +472,10 @@ svg#mobile-exit {
 }
 .contact-section .social-contact img {
   margin: 0 30px;
+  transition: 0.3s;
+}
+.contact-section .social-contact img:hover {
+  transform: scale(1.3);
 }
 .badge-section {
   display: flex;
