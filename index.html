@@ -18,836 +18,1241 @@
   </head>
   <body>
     <div class="main-container">
-    <div class="left-triangle-back"></div>
-    <div class="left-triangle"></div>
-    <!-- NAVBAR -->
-    <div class="navbar">
-      <div class="container">
-        <a href="#" class="logo">
-          <span class="brackets">&lt/</span>
-          <span class="text-logo">CA</span>
-          <span class="brackets">&gt</span>
-        </a>
+      <div class="left-triangle-back"></div>
+      <div class="left-triangle"></div>
+      <!-- NAVBAR -->
+      <div class="navbar">
+        <div class="container">
+          <a href="#" class="logo">
+            <span class="brackets">&lt/</span>
+            <span class="text-logo">CA</span>
+            <span class="brackets">&gt</span>
+          </a>
 
-        <div class="right-icons">
-          <button class="switch" id="switch">
-            <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
-              <path
-                d="M5.49948 9L4.57722 8.07775H2.92225V6.42295L2 5.5007L2.92225 4.57705V2.92225H4.57705L5.4993 2L6.42295 2.92225H8.07775V4.57705L9 5.50052L8.07775 6.42278V8.07775H6.42295L5.49948 9Z"
-                fill="#FBD85E"
-                stroke="#DB2F2F"
-                stroke-width="4"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+          <div class="right-icons">
+            <button class="switch" id="switch">
+              <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
+                <path
+                  d="M5.49948 9L4.57722 8.07775H2.92225V6.42295L2 5.5007L2.92225 4.57705V2.92225H4.57705L5.4993 2L6.42295 2.92225H8.07775V4.57705L9 5.50052L8.07775 6.42278V8.07775H6.42295L5.49948 9Z"
+                  fill="#FBD85E"
+                  stroke="#DB2F2F"
+                  stroke-width="4"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <svg
+                class="moon"
+                width="13"
+                height="13"
+                viewBox="0 0 13 11"
+                fill="none"
+              >
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M5.7555 0.0429734C3.17138 0.316123 1.15576 2.44557 1.15576 5.03213C1.15576 6.36272 1.70027 7.63882 2.66951 8.5797C3.63874 9.52057 4.9533 10.0492 6.32401 10.0492C8.98278 10.0492 11.1764 8.09809 11.4635 5.58957C11.5152 5.14919 11.0156 4.798 10.5792 5.06C10.1104 5.35046 9.56983 5.51328 9.01401 5.5314C8.45819 5.54952 7.90757 5.42229 7.41977 5.16302C6.93197 4.90375 6.52493 4.52197 6.24123 4.05763C5.95754 3.5933 5.80763 3.06347 5.80718 2.52361C5.80718 1.93272 5.9852 1.37527 6.28955 0.912591C6.54796 0.539102 6.26658 0.00395209 5.7555 0.0429734Z"
+                    fill="#D2CECF"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect
+                      width="11.5246"
+                      height="11.5246"
+                      fill="white"
+                      transform="translate(0.549194 0.0409546)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
 
             <svg
-              class="moon"
-              width="13"
-              height="13"
-              viewBox="0 0 13 11"
+              width="36"
+              height="36"
+              viewBox="0 0 36 36"
+              fill="none"
+              id="mobile-cta"
+              class="mobile-menu"
+            >
+              <path
+                d="M29.52 16.2H6.48002C5.48642 16.2 5.40002 17.0046 5.40002 18C5.40002 18.9954 5.48642 19.8 6.48002 19.8H29.52C30.5136 19.8 30.6 18.9954 30.6 18C30.6 17.0046 30.5136 16.2 29.52 16.2ZM29.52 23.4H6.48002C5.48642 23.4 5.40002 24.2046 5.40002 25.2C5.40002 26.1954 5.48642 27 6.48002 27H29.52C30.5136 27 30.6 26.1954 30.6 25.2C30.6 24.2046 30.5136 23.4 29.52 23.4ZM6.48002 12.6H29.52C30.5136 12.6 30.6 11.7954 30.6 10.8C30.6 9.8046 30.5136 9 29.52 9H6.48002C5.48642 9 5.40002 9.8046 5.40002 10.8C5.40002 11.7954 5.48642 12.6 6.48002 12.6Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+          <nav>
+            <svg
+              id="mobile-exit"
+              width="50"
+              height="50"
+              viewBox="0 0 60 60"
               fill="none"
             >
-              <g clip-path="url(#clip0)">
-                <path
-                  d="M5.7555 0.0429734C3.17138 0.316123 1.15576 2.44557 1.15576 5.03213C1.15576 6.36272 1.70027 7.63882 2.66951 8.5797C3.63874 9.52057 4.9533 10.0492 6.32401 10.0492C8.98278 10.0492 11.1764 8.09809 11.4635 5.58957C11.5152 5.14919 11.0156 4.798 10.5792 5.06C10.1104 5.35046 9.56983 5.51328 9.01401 5.5314C8.45819 5.54952 7.90757 5.42229 7.41977 5.16302C6.93197 4.90375 6.52493 4.52197 6.24123 4.05763C5.95754 3.5933 5.80763 3.06347 5.80718 2.52361C5.80718 1.93272 5.9852 1.37527 6.28955 0.912591C6.54796 0.539102 6.26658 0.00395209 5.7555 0.0429734Z"
-                  fill="#D2CECF"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0">
-                  <rect
-                    width="11.5246"
-                    height="11.5246"
-                    fill="white"
-                    transform="translate(0.549194 0.0409546)"
-                  />
-                </clipPath>
-              </defs>
+              <path
+                class="mobile-menu-exit"
+                d="M30 3.75C15.5039 3.75 3.75 15.5039 3.75 30C3.75 44.4961 15.5039 56.25 30 56.25C44.4961 56.25 56.25 44.4961 56.25 30C56.25 15.5039 44.4961 3.75 30 3.75ZM39.6914 39.9727L35.8242 39.9551L30 33.0117L24.1816 39.9492L20.3086 39.9668C20.0508 39.9668 19.8398 39.7617 19.8398 39.498C19.8398 39.3867 19.8809 39.2813 19.9512 39.1934L27.5742 30.1113L19.9512 21.0352C19.8804 20.9493 19.8411 20.8418 19.8398 20.7305C19.8398 20.4727 20.0508 20.2617 20.3086 20.2617L24.1816 20.2793L30 27.2227L35.8184 20.2852L39.6855 20.2676C39.9434 20.2676 40.1543 20.4727 40.1543 20.7363C40.1543 20.8477 40.1133 20.9531 40.043 21.041L32.4316 30.1172L40.0488 39.1992C40.1191 39.2871 40.1602 39.3926 40.1602 39.5039C40.1602 39.7617 39.9492 39.9727 39.6914 39.9727Z"
+                fill="black"
+              />
             </svg>
-          </button>
-
-          <svg
-            width="36"
-            height="36"
-            viewBox="0 0 36 36"
-            fill="none"
-            id="mobile-cta"
-            class="mobile-menu"
-          >
-            <path
-              d="M29.52 16.2H6.48002C5.48642 16.2 5.40002 17.0046 5.40002 18C5.40002 18.9954 5.48642 19.8 6.48002 19.8H29.52C30.5136 19.8 30.6 18.9954 30.6 18C30.6 17.0046 30.5136 16.2 29.52 16.2ZM29.52 23.4H6.48002C5.48642 23.4 5.40002 24.2046 5.40002 25.2C5.40002 26.1954 5.48642 27 6.48002 27H29.52C30.5136 27 30.6 26.1954 30.6 25.2C30.6 24.2046 30.5136 23.4 29.52 23.4ZM6.48002 12.6H29.52C30.5136 12.6 30.6 11.7954 30.6 10.8C30.6 9.8046 30.5136 9 29.52 9H6.48002C5.48642 9 5.40002 9.8046 5.40002 10.8C5.40002 11.7954 5.48642 12.6 6.48002 12.6Z"
-              fill="black"
-            />
-          </svg>
+            <ul class="nav-list">
+              <li><a href="#hero-section">Inicio</a></li>
+              <li><a href="#portfolo-section">Portafolio</a></li>
+              <li><a href="#about-section">Sobre mí</a></li>
+              <li><a href="#skills-section">Skills</a></li>
+              <li><a href="#resume-section">Resumen</a></li>
+              <li><a href="#contact-section">Contacto</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav>
-          <svg
-            id="mobile-exit"
-            width="50"
-            height="50"
-            viewBox="0 0 60 60"
-            fill="none"
-          >
-            <path
-              class="mobile-menu-exit"
-              d="M30 3.75C15.5039 3.75 3.75 15.5039 3.75 30C3.75 44.4961 15.5039 56.25 30 56.25C44.4961 56.25 56.25 44.4961 56.25 30C56.25 15.5039 44.4961 3.75 30 3.75ZM39.6914 39.9727L35.8242 39.9551L30 33.0117L24.1816 39.9492L20.3086 39.9668C20.0508 39.9668 19.8398 39.7617 19.8398 39.498C19.8398 39.3867 19.8809 39.2813 19.9512 39.1934L27.5742 30.1113L19.9512 21.0352C19.8804 20.9493 19.8411 20.8418 19.8398 20.7305C19.8398 20.4727 20.0508 20.2617 20.3086 20.2617L24.1816 20.2793L30 27.2227L35.8184 20.2852L39.6855 20.2676C39.9434 20.2676 40.1543 20.4727 40.1543 20.7363C40.1543 20.8477 40.1133 20.9531 40.043 21.041L32.4316 30.1172L40.0488 39.1992C40.1191 39.2871 40.1602 39.3926 40.1602 39.5039C40.1602 39.7617 39.9492 39.9727 39.6914 39.9727Z"
-              fill="black"
-            />
-          </svg>
-          <ul class="nav-list">
-            <li><a href="#hero-section">Inicio</a></li>
-            <li><a href="#portfolo-section">Portafolio</a></li>
-            <li><a href="#about-section">Sobre mí</a></li>
-            <li><a href="#skills-section">Skills</a></li>
-            <li><a href="#resume-section">Resumen</a></li>
-            <li><a href="#contact-section">Contacto</a></li>
-          </ul>
-        </nav>
       </div>
-    </div>
 
-    <!-- HOME -->
-    <section class="hero-section" id="hero-section">
-      <div class="container">
-        <img
-          class="image-profile"
-          src="./img/image-profile.png"
-          alt="image profile"
-        />
-        <div class="hero-description">
-          <h2 class="title-hero">Carlos Aguinaga Salinas</h2>
-          <h3 class="subtitle-hero"><span class="typed"></span></h3>
-          <div class="social-hero">
+      <!-- HOME -->
+      <section class="hero-section" id="hero-section">
+        <div class="container">
+          <img
+            class="image-profile"
+            src="./img/image-profile.png"
+            alt="image profile"
+          />
+          <div class="hero-description">
+            <h2 class="title-hero">Carlos Aguinaga Salinas</h2>
+            <h3 class="subtitle-hero"><span class="typed"></span></h3>
+            <div class="social-hero">
+              <a
+                href="https://www.linkedin.com/in/carlosaguinagasalinas"
+                target="_blank"
+              >
+                <svg
+                  width="29"
+                  height="29"
+                  viewBox="0 0 29 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="social-hero-icons"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M1.20837 3.42926C1.20837 2.84024 1.44236 2.27534 1.85887 1.85884C2.27537 1.44234 2.84027 1.20835 3.42929 1.20835H25.5684C25.8603 1.20787 26.1494 1.26497 26.4192 1.37639C26.689 1.4878 26.9342 1.65133 27.1407 1.85763C27.3472 2.06392 27.511 2.30892 27.6227 2.57861C27.7345 2.84829 27.7919 3.13736 27.7917 3.42926V25.5683C27.792 25.8603 27.7348 26.1495 27.6232 26.4193C27.5117 26.6891 27.348 26.9343 27.1416 27.1408C26.9353 27.3473 26.6902 27.511 26.4204 27.6227C26.1507 27.7344 25.8615 27.7918 25.5696 27.7917H3.42929C3.13753 27.7917 2.84864 27.7342 2.5791 27.6225C2.30957 27.5108 2.06469 27.3471 1.85844 27.1408C1.65219 26.9344 1.48863 26.6894 1.37708 26.4198C1.26554 26.1502 1.20822 25.8613 1.20837 25.5696V3.42926ZM11.7305 11.3438H15.3302V13.1515C15.8497 12.1123 17.1789 11.1771 19.1763 11.1771C23.0055 11.1771 23.913 13.247 23.913 17.0448V24.0797H20.0378V17.9099C20.0378 15.747 19.5182 14.5266 18.1987 14.5266C16.3681 14.5266 15.6069 15.8425 15.6069 17.9099V24.0797H11.7305V11.3438ZM5.08471 23.9141H8.96104V11.1771H5.08471V23.9129V23.9141ZM9.51567 7.02285C9.52297 7.35474 9.46392 7.68476 9.34196 7.99352C9.22 8.30228 9.03759 8.58357 8.80545 8.82089C8.5733 9.0582 8.29609 9.24675 7.99009 9.37548C7.68409 9.50421 7.35546 9.57052 7.02348 9.57052C6.6915 9.57052 6.36287 9.50421 6.05687 9.37548C5.75086 9.24675 5.47366 9.0582 5.24151 8.82089C5.00937 8.58357 4.82696 8.30228 4.705 7.99352C4.58304 7.68476 4.52398 7.35474 4.53129 7.02285C4.54564 6.37138 4.81451 5.75143 5.28032 5.29576C5.74613 4.84009 6.37185 4.58493 7.02348 4.58493C7.6751 4.58493 8.30083 4.84009 8.76664 5.29576C9.23245 5.75143 9.50132 6.37138 9.51567 7.02285Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+              <a href="https://github.com/carlosAguinaga" target="_blank">
+                <svg
+                  width="29"
+                  height="29"
+                  viewBox="0 0 29 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="social-hero-icons"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M14.5 0C6.48875 0 0 6.48875 0 14.5C0 20.9163 4.15063 26.3356 9.91438 28.2569C10.6394 28.3838 10.9113 27.9488 10.9113 27.5681C10.9113 27.2238 10.8931 26.0819 10.8931 24.8675C7.25 25.5381 6.3075 23.9794 6.0175 23.1638C5.85438 22.7469 5.1475 21.46 4.53125 21.1156C4.02375 20.8438 3.29875 20.1731 4.51312 20.155C5.655 20.1369 6.47062 21.2063 6.7425 21.6413C8.0475 23.8344 10.1319 23.2181 10.9656 22.8375C11.0925 21.895 11.4731 21.2606 11.89 20.8981C8.66375 20.5356 5.2925 19.285 5.2925 13.7388C5.2925 12.1619 5.85438 10.8569 6.77875 9.84188C6.63375 9.47938 6.12625 7.99313 6.92375 5.99938C6.92375 5.99938 8.13812 5.61875 10.9113 7.48563C12.0712 7.15938 13.3038 6.99625 14.5363 6.99625C15.7688 6.99625 17.0012 7.15938 18.1613 7.48563C20.9344 5.60063 22.1488 5.99938 22.1488 5.99938C22.9463 7.99313 22.4388 9.47938 22.2938 9.84188C23.2181 10.8569 23.78 12.1438 23.78 13.7388C23.78 19.3031 20.3906 20.5356 17.1644 20.8981C17.69 21.3513 18.1431 22.2213 18.1431 23.5806C18.1431 25.52 18.125 27.0788 18.125 27.5681C18.125 27.9488 18.3969 28.4019 19.1219 28.2569C22.0003 27.285 24.5016 25.435 26.2736 22.9672C28.0456 20.4994 28.9991 17.5381 29 14.5C29 6.48875 22.5113 0 14.5 0Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PORTFOLIO -->
+      <section class="portfolo-section" id="portfolo-section">
+        <div class="container">
+          <div class="title-container">
+            <svg
+              class="frame-title"
+              width="369"
+              height="110"
+              viewBox="0 0 369 110"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M366 3H3V109H287.579L366 171V3Z"
+                stroke="black"
+                stroke-width="10"
+              />
+            </svg>
+            <h2>Portafolio</h2>
+          </div>
+          <!-- main cards -->
+          <div class="cards-grid">
+            <!-- card-1 -->
+            <div class="card-item">
+              <div class="upper-card">
+                <a
+                  href="https://carlosaguinaga.github.io/soccer-manager"
+                  target="_blank"
+                >
+                  <img src="img/soccer.png" alt="soccer" />
+                </a>
+                <div class="description-card-container">
+                  <h2 class="card-item-title">Soccer Manager</h2>
+                  <p class="text-card-description">
+                    Soccer Manager es un administrador de equipos de fútbol
+                    desarrollado con React y Redux.
+                  </p>
+                  <div class="card-badges-container">
+                    <span class="badge-card">html</span>
+                    <span class="badge-card">css</span>
+                    <span class="badge-card">react</span>
+                    <span class="badge-card">redux</span>
+                    <span class="badge-card">sass</span>
+                  </div>
+                </div>
+              </div>
+              <div class="social-card-links">
+                <a
+                  href="https://github.com/carlosAguinaga/soccer-manager"
+                  target="_blank"
+                >
+                  <svg
+                    class="social-links-icon-1"
+                    width="29"
+                    height="29"
+                    viewBox="0 0 29 29"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M14.5 0C6.48875 0 0 6.48875 0 14.5C0 20.9163 4.15063 26.3356 9.91438 28.2569C10.6394 28.3838 10.9113 27.9488 10.9113 27.5681C10.9113 27.2238 10.8931 26.0819 10.8931 24.8675C7.25 25.5381 6.3075 23.9794 6.0175 23.1638C5.85438 22.7469 5.1475 21.46 4.53125 21.1156C4.02375 20.8438 3.29875 20.1731 4.51312 20.155C5.655 20.1369 6.47062 21.2063 6.7425 21.6413C8.0475 23.8344 10.1319 23.2181 10.9656 22.8375C11.0925 21.895 11.4731 21.2606 11.89 20.8981C8.66375 20.5356 5.2925 19.285 5.2925 13.7388C5.2925 12.1619 5.85438 10.8569 6.77875 9.84188C6.63375 9.47938 6.12625 7.99313 6.92375 5.99938C6.92375 5.99938 8.13812 5.61875 10.9113 7.48563C12.0712 7.15938 13.3038 6.99625 14.5363 6.99625C15.7688 6.99625 17.0012 7.15938 18.1613 7.48563C20.9344 5.60063 22.1488 5.99938 22.1488 5.99938C22.9463 7.99313 22.4388 9.47938 22.2938 9.84188C23.2181 10.8569 23.78 12.1438 23.78 13.7388C23.78 19.3031 20.3906 20.5356 17.1644 20.8981C17.69 21.3513 18.1431 22.2213 18.1431 23.5806C18.1431 25.52 18.125 27.0788 18.125 27.5681C18.125 27.9488 18.3969 28.4019 19.1219 28.2569C22.0003 27.285 24.5016 25.435 26.2736 22.9672C28.0456 20.4994 28.9991 17.5381 29 14.5C29 6.48875 22.5113 0 14.5 0Z"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://carlosaguinaga.github.io/soccer-manager"
+                  target="_blank"
+                >
+                  <svg
+                    class="social-links-icon-2"
+                    width="29"
+                    height="29"
+                    viewBox="0 0 19 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 4H3C2.46957 4 1.96086 4.21071 1.58579 4.58579C1.21071 4.96086 1 5.46957 1 6V15C1 15.5304 1.21071 16.0391 1.58579 16.4142C1.96086 16.7893 2.46957 17 3 17H12C12.5304 17 13.0391 16.7893 13.4142 16.4142C13.7893 16.0391 14 15.5304 14 15V10"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7 11L17 1"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 1H17V6"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <!-- card-2 -->
+            <div class="card-item">
+              <div class="upper-card">
+                <a href="https://pets-two.vercel.app" target="_blank">
+                  <img src="img/pets.png" alt="soccer" />
+                </a>
+                <div class="description-card-container">
+                  <h2 class="card-item-title">Petsgram</h2>
+                  <p class="text-card-description">
+                    Petsgram es un clon de Instagram para nuestras mascotas.
+                  </p>
+                  <div class="card-badges-container">
+                    <span class="badge-card">react</span>
+                    <span class="badge-card">css</span>
+                  </div>
+                </div>
+              </div>
+              <div class="social-card-links">
+                <a
+                  href="https://github.com/carlosAguinaga/pets-two"
+                  target="_blank"
+                >
+                  <svg
+                    class="social-links-icon-1"
+                    width="29"
+                    height="29"
+                    viewBox="0 0 29 29"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M14.5 0C6.48875 0 0 6.48875 0 14.5C0 20.9163 4.15063 26.3356 9.91438 28.2569C10.6394 28.3838 10.9113 27.9488 10.9113 27.5681C10.9113 27.2238 10.8931 26.0819 10.8931 24.8675C7.25 25.5381 6.3075 23.9794 6.0175 23.1638C5.85438 22.7469 5.1475 21.46 4.53125 21.1156C4.02375 20.8438 3.29875 20.1731 4.51312 20.155C5.655 20.1369 6.47062 21.2063 6.7425 21.6413C8.0475 23.8344 10.1319 23.2181 10.9656 22.8375C11.0925 21.895 11.4731 21.2606 11.89 20.8981C8.66375 20.5356 5.2925 19.285 5.2925 13.7388C5.2925 12.1619 5.85438 10.8569 6.77875 9.84188C6.63375 9.47938 6.12625 7.99313 6.92375 5.99938C6.92375 5.99938 8.13812 5.61875 10.9113 7.48563C12.0712 7.15938 13.3038 6.99625 14.5363 6.99625C15.7688 6.99625 17.0012 7.15938 18.1613 7.48563C20.9344 5.60063 22.1488 5.99938 22.1488 5.99938C22.9463 7.99313 22.4388 9.47938 22.2938 9.84188C23.2181 10.8569 23.78 12.1438 23.78 13.7388C23.78 19.3031 20.3906 20.5356 17.1644 20.8981C17.69 21.3513 18.1431 22.2213 18.1431 23.5806C18.1431 25.52 18.125 27.0788 18.125 27.5681C18.125 27.9488 18.3969 28.4019 19.1219 28.2569C22.0003 27.285 24.5016 25.435 26.2736 22.9672C28.0456 20.4994 28.9991 17.5381 29 14.5C29 6.48875 22.5113 0 14.5 0Z"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
+                <a href="https://pets-two.vercel.app" target="_blank">
+                  <svg
+                    class="social-links-icon-2"
+                    width="29"
+                    height="29"
+                    viewBox="0 0 19 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 4H3C2.46957 4 1.96086 4.21071 1.58579 4.58579C1.21071 4.96086 1 5.46957 1 6V15C1 15.5304 1.21071 16.0391 1.58579 16.4142C1.96086 16.7893 2.46957 17 3 17H12C12.5304 17 13.0391 16.7893 13.4142 16.4142C13.7893 16.0391 14 15.5304 14 15V10"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7 11L17 1"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 1H17V6"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <!-- card-3 -->
+            <div class="card-item">
+              <div class="upper-card">
+                <a
+                  href="https://carlosaguinaga.github.io/Layout-with-sass"
+                  target="_blank"
+                >
+                  <img src="img/digital.png" alt="soccer" />
+                </a>
+                <div class="description-card-container">
+                  <h2 class="card-item-title">Digital Apps</h2>
+                  <p class="text-card-description">
+                    Digital Apps es una página institucional demo muy ligera y
+                    minimalista.
+                  </p>
+                  <div class="card-badges-container">
+                    <span class="badge-card">html</span>
+                    <span class="badge-card">sass</span>
+                    <span class="badge-card">javaScript</span>
+                  </div>
+                </div>
+              </div>
+              <div class="social-card-links">
+                <a
+                  href="https://github.com/carlosAguinaga/Layout-with-sass"
+                  target="_blank"
+                >
+                  <svg
+                    class="social-links-icon-1"
+                    width="29"
+                    height="29"
+                    viewBox="0 0 29 29"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M14.5 0C6.48875 0 0 6.48875 0 14.5C0 20.9163 4.15063 26.3356 9.91438 28.2569C10.6394 28.3838 10.9113 27.9488 10.9113 27.5681C10.9113 27.2238 10.8931 26.0819 10.8931 24.8675C7.25 25.5381 6.3075 23.9794 6.0175 23.1638C5.85438 22.7469 5.1475 21.46 4.53125 21.1156C4.02375 20.8438 3.29875 20.1731 4.51312 20.155C5.655 20.1369 6.47062 21.2063 6.7425 21.6413C8.0475 23.8344 10.1319 23.2181 10.9656 22.8375C11.0925 21.895 11.4731 21.2606 11.89 20.8981C8.66375 20.5356 5.2925 19.285 5.2925 13.7388C5.2925 12.1619 5.85438 10.8569 6.77875 9.84188C6.63375 9.47938 6.12625 7.99313 6.92375 5.99938C6.92375 5.99938 8.13812 5.61875 10.9113 7.48563C12.0712 7.15938 13.3038 6.99625 14.5363 6.99625C15.7688 6.99625 17.0012 7.15938 18.1613 7.48563C20.9344 5.60063 22.1488 5.99938 22.1488 5.99938C22.9463 7.99313 22.4388 9.47938 22.2938 9.84188C23.2181 10.8569 23.78 12.1438 23.78 13.7388C23.78 19.3031 20.3906 20.5356 17.1644 20.8981C17.69 21.3513 18.1431 22.2213 18.1431 23.5806C18.1431 25.52 18.125 27.0788 18.125 27.5681C18.125 27.9488 18.3969 28.4019 19.1219 28.2569C22.0003 27.285 24.5016 25.435 26.2736 22.9672C28.0456 20.4994 28.9991 17.5381 29 14.5C29 6.48875 22.5113 0 14.5 0Z"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://carlosaguinaga.github.io/Layout-with-sass"
+                  target="_blank"
+                >
+                  <svg
+                    class="social-links-icon-2"
+                    width="29"
+                    height="29"
+                    viewBox="0 0 19 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 4H3C2.46957 4 1.96086 4.21071 1.58579 4.58579C1.21071 4.96086 1 5.46957 1 6V15C1 15.5304 1.21071 16.0391 1.58579 16.4142C1.96086 16.7893 2.46957 17 3 17H12C12.5304 17 13.0391 16.7893 13.4142 16.4142C13.7893 16.0391 14 15.5304 14 15V10"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7 11L17 1"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 1H17V6"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <!-- card-4 -->
+            <div class="card-item">
+              <div class="upper-card">
+                <a href="https://react-to-do-bice.vercel.app" target="_blank">
+                  <img src="img/tasks.png" alt="soccer" />
+                </a>
+                <div class="description-card-container">
+                  <h2 class="card-item-title">Tasks To-Do</h2>
+                  <p class="text-card-description">
+                    Tasks To-Do es una full-stack app que nos sirve para
+                    organizar mejor nuestros pendientes, este proyecto fue
+                    desarrollado con tecnologías de Javascript como NodeJS y
+                    React.
+                  </p>
+                  <div class="card-badges-container">
+                    <span class="badge-card">react</span>
+                    <span class="badge-card">nodeJS</span>
+                    <span class="badge-card">mongoDB</span>
+                    <span class="badge-card">bootstrap</span>
+                  </div>
+                </div>
+              </div>
+              <div class="social-card-links">
+                <a
+                  href="https://github.com/carlosAguinaga/react-to-do"
+                  target="_blank"
+                >
+                  <svg
+                    class="social-links-icon-1"
+                    width="29"
+                    height="29"
+                    viewBox="0 0 29 29"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M14.5 0C6.48875 0 0 6.48875 0 14.5C0 20.9163 4.15063 26.3356 9.91438 28.2569C10.6394 28.3838 10.9113 27.9488 10.9113 27.5681C10.9113 27.2238 10.8931 26.0819 10.8931 24.8675C7.25 25.5381 6.3075 23.9794 6.0175 23.1638C5.85438 22.7469 5.1475 21.46 4.53125 21.1156C4.02375 20.8438 3.29875 20.1731 4.51312 20.155C5.655 20.1369 6.47062 21.2063 6.7425 21.6413C8.0475 23.8344 10.1319 23.2181 10.9656 22.8375C11.0925 21.895 11.4731 21.2606 11.89 20.8981C8.66375 20.5356 5.2925 19.285 5.2925 13.7388C5.2925 12.1619 5.85438 10.8569 6.77875 9.84188C6.63375 9.47938 6.12625 7.99313 6.92375 5.99938C6.92375 5.99938 8.13812 5.61875 10.9113 7.48563C12.0712 7.15938 13.3038 6.99625 14.5363 6.99625C15.7688 6.99625 17.0012 7.15938 18.1613 7.48563C20.9344 5.60063 22.1488 5.99938 22.1488 5.99938C22.9463 7.99313 22.4388 9.47938 22.2938 9.84188C23.2181 10.8569 23.78 12.1438 23.78 13.7388C23.78 19.3031 20.3906 20.5356 17.1644 20.8981C17.69 21.3513 18.1431 22.2213 18.1431 23.5806C18.1431 25.52 18.125 27.0788 18.125 27.5681C18.125 27.9488 18.3969 28.4019 19.1219 28.2569C22.0003 27.285 24.5016 25.435 26.2736 22.9672C28.0456 20.4994 28.9991 17.5381 29 14.5C29 6.48875 22.5113 0 14.5 0Z"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
+                <a href="https://react-to-do-bice.vercel.app" target="_blank">
+                  <svg
+                    class="social-links-icon-2"
+                    width="29"
+                    height="29"
+                    viewBox="0 0 19 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 4H3C2.46957 4 1.96086 4.21071 1.58579 4.58579C1.21071 4.96086 1 5.46957 1 6V15C1 15.5304 1.21071 16.0391 1.58579 16.4142C1.96086 16.7893 2.46957 17 3 17H12C12.5304 17 13.0391 16.7893 13.4142 16.4142C13.7893 16.0391 14 15.5304 14 15V10"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7 11L17 1"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 1H17V6"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <!-- card-5 -->
+            <div class="card-item">
+              <div class="upper-card">
+                <a
+                  href="https://carlosaguinaga.github.io/cientifico-SPA"
+                  target="_blank"
+                >
+                  <img src="img/cientifico.png" alt="soccer" />
+                </a>
+                <div class="description-card-container">
+                  <h2 class="card-item-title">Cientifico SPA</h2>
+                  <p class="text-card-description">
+                    Científico app es un SPA desarrollado con Javascript puro,
+                    sin la intervención de ninguna librería fronted.
+                  </p>
+                  <div class="card-badges-container">
+                    <span class="badge-card">html</span>
+                    <span class="badge-card">css</span>
+                    <span class="badge-card">javaScript</span>
+                    <span class="badge-card">webpack</span>
+                  </div>
+                </div>
+              </div>
+              <div class="social-card-links">
+                <a
+                  href="https://github.com/carlosAguinaga/cientifico-SPA"
+                  target="_blank"
+                >
+                  <svg
+                    class="social-links-icon-1"
+                    width="29"
+                    height="29"
+                    viewBox="0 0 29 29"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M14.5 0C6.48875 0 0 6.48875 0 14.5C0 20.9163 4.15063 26.3356 9.91438 28.2569C10.6394 28.3838 10.9113 27.9488 10.9113 27.5681C10.9113 27.2238 10.8931 26.0819 10.8931 24.8675C7.25 25.5381 6.3075 23.9794 6.0175 23.1638C5.85438 22.7469 5.1475 21.46 4.53125 21.1156C4.02375 20.8438 3.29875 20.1731 4.51312 20.155C5.655 20.1369 6.47062 21.2063 6.7425 21.6413C8.0475 23.8344 10.1319 23.2181 10.9656 22.8375C11.0925 21.895 11.4731 21.2606 11.89 20.8981C8.66375 20.5356 5.2925 19.285 5.2925 13.7388C5.2925 12.1619 5.85438 10.8569 6.77875 9.84188C6.63375 9.47938 6.12625 7.99313 6.92375 5.99938C6.92375 5.99938 8.13812 5.61875 10.9113 7.48563C12.0712 7.15938 13.3038 6.99625 14.5363 6.99625C15.7688 6.99625 17.0012 7.15938 18.1613 7.48563C20.9344 5.60063 22.1488 5.99938 22.1488 5.99938C22.9463 7.99313 22.4388 9.47938 22.2938 9.84188C23.2181 10.8569 23.78 12.1438 23.78 13.7388C23.78 19.3031 20.3906 20.5356 17.1644 20.8981C17.69 21.3513 18.1431 22.2213 18.1431 23.5806C18.1431 25.52 18.125 27.0788 18.125 27.5681C18.125 27.9488 18.3969 28.4019 19.1219 28.2569C22.0003 27.285 24.5016 25.435 26.2736 22.9672C28.0456 20.4994 28.9991 17.5381 29 14.5C29 6.48875 22.5113 0 14.5 0Z"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://carlosaguinaga.github.io/cientifico-SPA"
+                  target="_blank"
+                >
+                  <svg
+                    class="social-links-icon-2"
+                    width="29"
+                    height="29"
+                    viewBox="0 0 19 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 4H3C2.46957 4 1.96086 4.21071 1.58579 4.58579C1.21071 4.96086 1 5.46957 1 6V15C1 15.5304 1.21071 16.0391 1.58579 16.4142C1.96086 16.7893 2.46957 17 3 17H12C12.5304 17 13.0391 16.7893 13.4142 16.4142C13.7893 16.0391 14 15.5304 14 15V10"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7 11L17 1"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 1H17V6"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <!-- card-6 -->
+            <div class="card-item">
+              <div class="upper-card">
+                <a
+                  href="https://carlosaguinaga.github.io/portfolio"
+                  target="_blank"
+                >
+                  <img src="img/portafolio.png" alt="soccer" />
+                </a>
+                <div class="description-card-container">
+                  <h2 class="card-item-title">Portafolio</h2>
+                  <p class="text-card-description">
+                    Sitio web personal enfocado al portafolio profesional.
+                  </p>
+                  <div class="card-badges-container">
+                    <span class="badge-card">html</span>
+                    <span class="badge-card">css</span>
+                    <span class="badge-card">javaScript</span>
+                  </div>
+                </div>
+              </div>
+              <div class="social-card-links">
+                <a
+                  href="https://github.com/carlosAguinaga/portfolio"
+                  target="_blank"
+                >
+                  <svg
+                    class="social-links-icon-1"
+                    width="29"
+                    height="29"
+                    viewBox="0 0 29 29"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M14.5 0C6.48875 0 0 6.48875 0 14.5C0 20.9163 4.15063 26.3356 9.91438 28.2569C10.6394 28.3838 10.9113 27.9488 10.9113 27.5681C10.9113 27.2238 10.8931 26.0819 10.8931 24.8675C7.25 25.5381 6.3075 23.9794 6.0175 23.1638C5.85438 22.7469 5.1475 21.46 4.53125 21.1156C4.02375 20.8438 3.29875 20.1731 4.51312 20.155C5.655 20.1369 6.47062 21.2063 6.7425 21.6413C8.0475 23.8344 10.1319 23.2181 10.9656 22.8375C11.0925 21.895 11.4731 21.2606 11.89 20.8981C8.66375 20.5356 5.2925 19.285 5.2925 13.7388C5.2925 12.1619 5.85438 10.8569 6.77875 9.84188C6.63375 9.47938 6.12625 7.99313 6.92375 5.99938C6.92375 5.99938 8.13812 5.61875 10.9113 7.48563C12.0712 7.15938 13.3038 6.99625 14.5363 6.99625C15.7688 6.99625 17.0012 7.15938 18.1613 7.48563C20.9344 5.60063 22.1488 5.99938 22.1488 5.99938C22.9463 7.99313 22.4388 9.47938 22.2938 9.84188C23.2181 10.8569 23.78 12.1438 23.78 13.7388C23.78 19.3031 20.3906 20.5356 17.1644 20.8981C17.69 21.3513 18.1431 22.2213 18.1431 23.5806C18.1431 25.52 18.125 27.0788 18.125 27.5681C18.125 27.9488 18.3969 28.4019 19.1219 28.2569C22.0003 27.285 24.5016 25.435 26.2736 22.9672C28.0456 20.4994 28.9991 17.5381 29 14.5C29 6.48875 22.5113 0 14.5 0Z"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://carlosaguinaga.github.io/portfolio"
+                  target="_blank"
+                >
+                  <svg
+                    class="social-links-icon-2"
+                    width="29"
+                    height="29"
+                    viewBox="0 0 19 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 4H3C2.46957 4 1.96086 4.21071 1.58579 4.58579C1.21071 4.96086 1 5.46957 1 6V15C1 15.5304 1.21071 16.0391 1.58579 16.4142C1.96086 16.7893 2.46957 17 3 17H12C12.5304 17 13.0391 16.7893 13.4142 16.4142C13.7893 16.0391 14 15.5304 14 15V10"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7 11L17 1"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 1H17V6"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- aditional cards -->
+          <div class="accordion">
+            <div class="contentBx">
+              <div class="label">MOBILE PROJECTS</div>
+              <div class="content">
+                <!-- card mobile 1 -->
+                <div class="card-item">
+                  <div class="upper-card">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.exercises.projectgym"
+                      target="_blank"
+                    >
+                      <img src="img/gym.png" alt="soccer" />
+                    </a>
+                    <div class="description-card-container">
+                      <h2 class="card-item-title">Ejercicios Gym</h2>
+                      <p class="text-card-description">
+                        App de ejercicios para la plataforma android con mas de
+                        300 000 descargas.
+                      </p>
+                      <div class="card-badges-container">
+                        <span class="badge-card">android</span>
+                        <span class="badge-card">java</span>
+                        <span class="badge-card">illustrator</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="social-card-links">
+                    <a href="#">
+                      <svg
+                        class="social-links-icon-1"
+                        width="29"
+                        height="29"
+                        viewBox="0 0 29 29"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M14.5 0C6.48875 0 0 6.48875 0 14.5C0 20.9163 4.15063 26.3356 9.91438 28.2569C10.6394 28.3838 10.9113 27.9488 10.9113 27.5681C10.9113 27.2238 10.8931 26.0819 10.8931 24.8675C7.25 25.5381 6.3075 23.9794 6.0175 23.1638C5.85438 22.7469 5.1475 21.46 4.53125 21.1156C4.02375 20.8438 3.29875 20.1731 4.51312 20.155C5.655 20.1369 6.47062 21.2063 6.7425 21.6413C8.0475 23.8344 10.1319 23.2181 10.9656 22.8375C11.0925 21.895 11.4731 21.2606 11.89 20.8981C8.66375 20.5356 5.2925 19.285 5.2925 13.7388C5.2925 12.1619 5.85438 10.8569 6.77875 9.84188C6.63375 9.47938 6.12625 7.99313 6.92375 5.99938C6.92375 5.99938 8.13812 5.61875 10.9113 7.48563C12.0712 7.15938 13.3038 6.99625 14.5363 6.99625C15.7688 6.99625 17.0012 7.15938 18.1613 7.48563C20.9344 5.60063 22.1488 5.99938 22.1488 5.99938C22.9463 7.99313 22.4388 9.47938 22.2938 9.84188C23.2181 10.8569 23.78 12.1438 23.78 13.7388C23.78 19.3031 20.3906 20.5356 17.1644 20.8981C17.69 21.3513 18.1431 22.2213 18.1431 23.5806C18.1431 25.52 18.125 27.0788 18.125 27.5681C18.125 27.9488 18.3969 28.4019 19.1219 28.2569C22.0003 27.285 24.5016 25.435 26.2736 22.9672C28.0456 20.4994 28.9991 17.5381 29 14.5C29 6.48875 22.5113 0 14.5 0Z"
+                          fill="black"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.exercises.projectgym"
+                      target="_blank"
+                    >
+                      <svg
+                        class="social-links-icon-2"
+                        width="29"
+                        height="29"
+                        viewBox="0 0 19 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8 4H3C2.46957 4 1.96086 4.21071 1.58579 4.58579C1.21071 4.96086 1 5.46957 1 6V15C1 15.5304 1.21071 16.0391 1.58579 16.4142C1.96086 16.7893 2.46957 17 3 17H12C12.5304 17 13.0391 16.7893 13.4142 16.4142C13.7893 16.0391 14 15.5304 14 15V10"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M7 11L17 1"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M12 1H17V6"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <!-- card mobile 2 -->
+                <div class="card-item">
+                  <div class="upper-card">
+                    <a
+                      href="https://drive.google.com/file/d/1dzXTVfqnYLC_mkW-0ORooh1cjPoGPRWq/view"
+                      target="_blank"
+                    >
+                      <img src="img/native.png" alt="soccer" />
+                    </a>
+                    <div class="description-card-container">
+                      <h2 class="card-item-title">React Native App</h2>
+                      <p class="text-card-description">
+                        Esta app desarrollada en React Native implementa un
+                        sistema de login utilizando firebase, en donde podrás
+                        administrar tus contactos.
+                      </p>
+                      <div class="card-badges-container">
+                        <span class="badge-card">react native</span>
+                        <span class="badge-card">firebase</span>
+                        <span class="badge-card">expo</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="social-card-links">
+                    <a
+                      href="https://github.com/carlosAguinaga/react-native-firebase"
+                      target="_blank"
+                    >
+                      <svg
+                        class="social-links-icon-1"
+                        width="29"
+                        height="29"
+                        viewBox="0 0 29 29"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M14.5 0C6.48875 0 0 6.48875 0 14.5C0 20.9163 4.15063 26.3356 9.91438 28.2569C10.6394 28.3838 10.9113 27.9488 10.9113 27.5681C10.9113 27.2238 10.8931 26.0819 10.8931 24.8675C7.25 25.5381 6.3075 23.9794 6.0175 23.1638C5.85438 22.7469 5.1475 21.46 4.53125 21.1156C4.02375 20.8438 3.29875 20.1731 4.51312 20.155C5.655 20.1369 6.47062 21.2063 6.7425 21.6413C8.0475 23.8344 10.1319 23.2181 10.9656 22.8375C11.0925 21.895 11.4731 21.2606 11.89 20.8981C8.66375 20.5356 5.2925 19.285 5.2925 13.7388C5.2925 12.1619 5.85438 10.8569 6.77875 9.84188C6.63375 9.47938 6.12625 7.99313 6.92375 5.99938C6.92375 5.99938 8.13812 5.61875 10.9113 7.48563C12.0712 7.15938 13.3038 6.99625 14.5363 6.99625C15.7688 6.99625 17.0012 7.15938 18.1613 7.48563C20.9344 5.60063 22.1488 5.99938 22.1488 5.99938C22.9463 7.99313 22.4388 9.47938 22.2938 9.84188C23.2181 10.8569 23.78 12.1438 23.78 13.7388C23.78 19.3031 20.3906 20.5356 17.1644 20.8981C17.69 21.3513 18.1431 22.2213 18.1431 23.5806C18.1431 25.52 18.125 27.0788 18.125 27.5681C18.125 27.9488 18.3969 28.4019 19.1219 28.2569C22.0003 27.285 24.5016 25.435 26.2736 22.9672C28.0456 20.4994 28.9991 17.5381 29 14.5C29 6.48875 22.5113 0 14.5 0Z"
+                          fill="black"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      href="https://drive.google.com/file/d/1dzXTVfqnYLC_mkW-0ORooh1cjPoGPRWq/view"
+                      target="_blank"
+                    >
+                      <svg
+                        class="social-links-icon-2"
+                        width="29"
+                        height="29"
+                        viewBox="0 0 19 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8 4H3C2.46957 4 1.96086 4.21071 1.58579 4.58579C1.21071 4.96086 1 5.46957 1 6V15C1 15.5304 1.21071 16.0391 1.58579 16.4142C1.96086 16.7893 2.46957 17 3 17H12C12.5304 17 13.0391 16.7893 13.4142 16.4142C13.7893 16.0391 14 15.5304 14 15V10"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M7 11L17 1"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M12 1H17V6"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <!-- card mobile 3 -->
+                <div class="card-item">
+                  <div class="upper-card">
+                    <a
+                      href="https://play.google.com/store/apps/developer?id=Digitalapp"
+                      target="_blank"
+                    >
+                      <img src="img/digitalapps.png" alt="soccer" />
+                    </a>
+                    <div class="description-card-container">
+                      <h2 class="card-item-title">Digital Apps</h2>
+                      <p class="text-card-description">
+                        Cuenta personal de android developer, con cientos de miles de descargas y calificación satisfactoria.
+                      </p>
+                      <div class="card-badges-container">
+                        <span class="badge-card">android</span>
+                        <span class="badge-card">java</span>
+                        <span class="badge-card">illustrator</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="social-card-links">
+                    <a
+                      href="#"
+                    >
+                      <svg
+                        class="social-links-icon-1"
+                        width="29"
+                        height="29"
+                        viewBox="0 0 29 29"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M14.5 0C6.48875 0 0 6.48875 0 14.5C0 20.9163 4.15063 26.3356 9.91438 28.2569C10.6394 28.3838 10.9113 27.9488 10.9113 27.5681C10.9113 27.2238 10.8931 26.0819 10.8931 24.8675C7.25 25.5381 6.3075 23.9794 6.0175 23.1638C5.85438 22.7469 5.1475 21.46 4.53125 21.1156C4.02375 20.8438 3.29875 20.1731 4.51312 20.155C5.655 20.1369 6.47062 21.2063 6.7425 21.6413C8.0475 23.8344 10.1319 23.2181 10.9656 22.8375C11.0925 21.895 11.4731 21.2606 11.89 20.8981C8.66375 20.5356 5.2925 19.285 5.2925 13.7388C5.2925 12.1619 5.85438 10.8569 6.77875 9.84188C6.63375 9.47938 6.12625 7.99313 6.92375 5.99938C6.92375 5.99938 8.13812 5.61875 10.9113 7.48563C12.0712 7.15938 13.3038 6.99625 14.5363 6.99625C15.7688 6.99625 17.0012 7.15938 18.1613 7.48563C20.9344 5.60063 22.1488 5.99938 22.1488 5.99938C22.9463 7.99313 22.4388 9.47938 22.2938 9.84188C23.2181 10.8569 23.78 12.1438 23.78 13.7388C23.78 19.3031 20.3906 20.5356 17.1644 20.8981C17.69 21.3513 18.1431 22.2213 18.1431 23.5806C18.1431 25.52 18.125 27.0788 18.125 27.5681C18.125 27.9488 18.3969 28.4019 19.1219 28.2569C22.0003 27.285 24.5016 25.435 26.2736 22.9672C28.0456 20.4994 28.9991 17.5381 29 14.5C29 6.48875 22.5113 0 14.5 0Z"
+                          fill="black"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      href="https://play.google.com/store/apps/developer?id=Digitalapp"
+                      target="_blank"
+                    >
+                      <svg
+                        class="social-links-icon-2"
+                        width="29"
+                        height="29"
+                        viewBox="0 0 19 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8 4H3C2.46957 4 1.96086 4.21071 1.58579 4.58579C1.21071 4.96086 1 5.46957 1 6V15C1 15.5304 1.21071 16.0391 1.58579 16.4142C1.96086 16.7893 2.46957 17 3 17H12C12.5304 17 13.0391 16.7893 13.4142 16.4142C13.7893 16.0391 14 15.5304 14 15V10"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M7 11L17 1"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M12 1H17V6"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contentBx">
+              <div class="label">UI DESIGN</div>
+              <div class="content">
+                <!-- UI 1 -->
+                <div class="card-item">
+                  <div class="upper-card">
+                    <a
+                      href="https://www.figma.com/proto/4qaApwUVSfXi1SfDaqjryq/travel-budge?node-id=1%3A18&viewport=415%2C190%2C0.13862058520317078&scaling=scale-down"
+                      target="_blank"
+                    >
+                      <img src="img/travel.png" alt="soccer" />
+                    </a>
+                    <div class="description-card-container">
+                      <h2 class="card-item-title">Travel Budge</h2>
+                      <p class="text-card-description">
+                        Diseño de app de viajes a partir de un presupuesto asignado.
+                      </p>
+                      <div class="card-badges-container">
+                        <span class="badge-card">figma</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="social-card-links">
+                    <a
+                      href="https://www.figma.com/file/4qaApwUVSfXi1SfDaqjryq/travel-budge"
+                      target="_blank"
+                    >
+                      <svg
+                        class="social-links-icon-1"
+                        width="29"
+                        height="29"
+                        viewBox="0 0 29 29"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M14.5 0C6.48875 0 0 6.48875 0 14.5C0 20.9163 4.15063 26.3356 9.91438 28.2569C10.6394 28.3838 10.9113 27.9488 10.9113 27.5681C10.9113 27.2238 10.8931 26.0819 10.8931 24.8675C7.25 25.5381 6.3075 23.9794 6.0175 23.1638C5.85438 22.7469 5.1475 21.46 4.53125 21.1156C4.02375 20.8438 3.29875 20.1731 4.51312 20.155C5.655 20.1369 6.47062 21.2063 6.7425 21.6413C8.0475 23.8344 10.1319 23.2181 10.9656 22.8375C11.0925 21.895 11.4731 21.2606 11.89 20.8981C8.66375 20.5356 5.2925 19.285 5.2925 13.7388C5.2925 12.1619 5.85438 10.8569 6.77875 9.84188C6.63375 9.47938 6.12625 7.99313 6.92375 5.99938C6.92375 5.99938 8.13812 5.61875 10.9113 7.48563C12.0712 7.15938 13.3038 6.99625 14.5363 6.99625C15.7688 6.99625 17.0012 7.15938 18.1613 7.48563C20.9344 5.60063 22.1488 5.99938 22.1488 5.99938C22.9463 7.99313 22.4388 9.47938 22.2938 9.84188C23.2181 10.8569 23.78 12.1438 23.78 13.7388C23.78 19.3031 20.3906 20.5356 17.1644 20.8981C17.69 21.3513 18.1431 22.2213 18.1431 23.5806C18.1431 25.52 18.125 27.0788 18.125 27.5681C18.125 27.9488 18.3969 28.4019 19.1219 28.2569C22.0003 27.285 24.5016 25.435 26.2736 22.9672C28.0456 20.4994 28.9991 17.5381 29 14.5C29 6.48875 22.5113 0 14.5 0Z"
+                          fill="black"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      href="https://www.figma.com/proto/4qaApwUVSfXi1SfDaqjryq/travel-budge?node-id=1%3A18&viewport=415%2C190%2C0.13862058520317078&scaling=scale-down"
+                      target="_blank"
+                    >
+                      <svg
+                        class="social-links-icon-2"
+                        width="29"
+                        height="29"
+                        viewBox="0 0 19 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8 4H3C2.46957 4 1.96086 4.21071 1.58579 4.58579C1.21071 4.96086 1 5.46957 1 6V15C1 15.5304 1.21071 16.0391 1.58579 16.4142C1.96086 16.7893 2.46957 17 3 17H12C12.5304 17 13.0391 16.7893 13.4142 16.4142C13.7893 16.0391 14 15.5304 14 15V10"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M7 11L17 1"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M12 1H17V6"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <!-- UI 2 -->
+                <div class="card-item">
+                  <div class="upper-card">
+                    <a
+                      href="https://www.figma.com/file/rIXaBAUBuOHPMCe3nhaCtS/Portfolio?node-id=0%3A1"
+                      target="_blank"
+                    >
+                      <img src="img/portafolio.png" alt="soccer" />
+                    </a>
+                    <div class="description-card-container">
+                      <h2 class="card-item-title">Diseño de Portafolio</h2>
+                      <p class="text-card-description">
+                        Diseño de la UI de esta web.
+                      </p>
+                      <div class="card-badges-container">
+                        <span class="badge-card">figma</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="social-card-links">
+                    <a
+                      href="https://www.figma.com/file/rIXaBAUBuOHPMCe3nhaCtS/Portfolio?node-id=0%3A1"
+                      target="_blank"
+                    >
+                      <svg
+                        class="social-links-icon-1"
+                        width="29"
+                        height="29"
+                        viewBox="0 0 29 29"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M14.5 0C6.48875 0 0 6.48875 0 14.5C0 20.9163 4.15063 26.3356 9.91438 28.2569C10.6394 28.3838 10.9113 27.9488 10.9113 27.5681C10.9113 27.2238 10.8931 26.0819 10.8931 24.8675C7.25 25.5381 6.3075 23.9794 6.0175 23.1638C5.85438 22.7469 5.1475 21.46 4.53125 21.1156C4.02375 20.8438 3.29875 20.1731 4.51312 20.155C5.655 20.1369 6.47062 21.2063 6.7425 21.6413C8.0475 23.8344 10.1319 23.2181 10.9656 22.8375C11.0925 21.895 11.4731 21.2606 11.89 20.8981C8.66375 20.5356 5.2925 19.285 5.2925 13.7388C5.2925 12.1619 5.85438 10.8569 6.77875 9.84188C6.63375 9.47938 6.12625 7.99313 6.92375 5.99938C6.92375 5.99938 8.13812 5.61875 10.9113 7.48563C12.0712 7.15938 13.3038 6.99625 14.5363 6.99625C15.7688 6.99625 17.0012 7.15938 18.1613 7.48563C20.9344 5.60063 22.1488 5.99938 22.1488 5.99938C22.9463 7.99313 22.4388 9.47938 22.2938 9.84188C23.2181 10.8569 23.78 12.1438 23.78 13.7388C23.78 19.3031 20.3906 20.5356 17.1644 20.8981C17.69 21.3513 18.1431 22.2213 18.1431 23.5806C18.1431 25.52 18.125 27.0788 18.125 27.5681C18.125 27.9488 18.3969 28.4019 19.1219 28.2569C22.0003 27.285 24.5016 25.435 26.2736 22.9672C28.0456 20.4994 28.9991 17.5381 29 14.5C29 6.48875 22.5113 0 14.5 0Z"
+                          fill="black"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      href="https://www.figma.com/file/rIXaBAUBuOHPMCe3nhaCtS/Portfolio?node-id=0%3A1"
+                      target="_blank"
+                    >
+                      <svg
+                        class="social-links-icon-2"
+                        width="29"
+                        height="29"
+                        viewBox="0 0 19 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8 4H3C2.46957 4 1.96086 4.21071 1.58579 4.58579C1.21071 4.96086 1 5.46957 1 6V15C1 15.5304 1.21071 16.0391 1.58579 16.4142C1.96086 16.7893 2.46957 17 3 17H12C12.5304 17 13.0391 16.7893 13.4142 16.4142C13.7893 16.0391 14 15.5304 14 15V10"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M7 11L17 1"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M12 1H17V6"
+                          stroke="black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="about-section" id="about-section">
+        <div class="container">
+          <div class="title-container">
+            <svg
+              class="frame-title"
+              width="369"
+              height="110"
+              viewBox="0 0 369 110"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M366 3H3V109H287.579L366 171V3Z"
+                stroke="black"
+                stroke-width="10"
+              />
+            </svg>
+            <h2>Sobre mí</h2>
+          </div>
+          <p class="about-description">
+            Soy un apasionado de la programación, me encanta desarrollar
+            soluciones digitales utilizando diversas tecnologías, para impactar
+            de manera positiva en los usuarios, mejorando su calidad de vida y
+            su experiencia con la tecnología.
+          </p>
+          <a
+            href="https://drive.google.com/file/d/1QHo_58AlQ-xzx9JsEqfBKow0tRlf1Hwf/view?usp=sharing"
+            class="btn-cv"
+            target="_blank"
+            >Download CV</a
+          >
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="skills-section" id="skills-section">
+        <div class="container">
+          <div class="title-container">
+            <svg
+              class="frame-title"
+              width="369"
+              height="110"
+              viewBox="0 0 369 110"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M366 3H3V109H287.579L366 171V3Z"
+                stroke="black"
+                stroke-width="10"
+              />
+            </svg>
+            <h2>Skills</h2>
+          </div>
+          <div class="skills-badges-container">
+            <div class="front-badge badge-section">
+              <div class="badge-element">
+                <h3>HTML</h3>
+                <img src="./img/html.svg" alt="Html" />
+              </div>
+              <div class="badge-element">
+                <h3>CSS</h3>
+                <img src="./img/css.svg" alt="Css" />
+              </div>
+              <div class="badge-element">
+                <h3>JAVASCRIPT</h3>
+                <img src="./img/js.svg" alt="Javascript" />
+              </div>
+              <div class="badge-element">
+                <h3>REACT</h3>
+                <img src="./img/react.svg" alt="React" />
+              </div>
+            </div>
+            <div class="back-badge badge-section">
+              <div class="badge-element">
+                <h3>NODE</h3>
+                <img src="./img/node.svg" alt="Node" />
+              </div>
+              <div class="badge-element">
+                <h3>SQL</h3>
+                <img src="./img/sql.svg" alt="Sql" />
+              </div>
+              <div class="badge-element">
+                <h3>PYTHON</h3>
+                <img src="./img/python.svg" alt="Python" />
+              </div>
+            </div>
+            <div class="other-badge badge-section">
+              <div class="badge-element">
+                <h3>FIGMA</h3>
+                <img src="./img/figma.svg" alt="Figma" />
+              </div>
+              <div class="badge-element">
+                <h3>GIT</h3>
+                <img src="./img/git.svg" alt="Git" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESUME -->
+      <section class="resume-section" id="resume-section">
+        <div class="container">
+          <div class="title-container">
+            <svg
+              class="frame-title"
+              width="369"
+              height="110"
+              viewBox="0 0 369 110"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M366 3H3V109H287.579L366 171V3Z"
+                stroke="black"
+                stroke-width="10"
+              />
+            </svg>
+            <h2 class="resume-title">Resumen</h2>
+          </div>
+          <div class="education-container">
+            <h3 class="education-title">Educación</h3>
+            <div class="timeline-items">
+              <div class="timeline-item">
+                <h3>Web Full-Stack</h3>
+                <h4>Academlo 2021</h4>
+              </div>
+              <div class="timeline-item">
+                <h3>Escuela de JavaScript</h3>
+                <h4>Platzi / 2020</h4>
+              </div>
+              <div class="timeline-item">
+                <h3>Escadística</h3>
+                <h4>Universidad Nacional Mayor de San Marcos / 2020</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="experience-container">
+            <h3 class="experience-title">Experiencia</h3>
+            <div class="timeline-items">
+              <div class="timeline-item">
+                <h3>Web Developer</h3>
+                <h4>Freelance / 2021</h4>
+              </div>
+              <div class="timeline-item">
+                <h3>Android Developer</h3>
+                <h4>Digitalapp / 2018 - 2020</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="contact-section" id="contact-section">
+        <div class="container">
+          <div class="title-container">
+            <svg
+              class="frame-title"
+              width="369"
+              height="110"
+              viewBox="0 0 369 110"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M366 3H3V109H287.579L366 171V3Z"
+                stroke="black"
+                stroke-width="10"
+              />
+            </svg>
+            <h2>Contacto</h2>
+          </div>
+          <div class="social-contact">
             <a
               href="https://www.linkedin.com/in/carlosaguinagasalinas"
               target="_blank"
-            >
-              <svg
-                width="29"
-                height="29"
-                viewBox="0 0 29 29"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  class="social-hero-icons"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M1.20837 3.42926C1.20837 2.84024 1.44236 2.27534 1.85887 1.85884C2.27537 1.44234 2.84027 1.20835 3.42929 1.20835H25.5684C25.8603 1.20787 26.1494 1.26497 26.4192 1.37639C26.689 1.4878 26.9342 1.65133 27.1407 1.85763C27.3472 2.06392 27.511 2.30892 27.6227 2.57861C27.7345 2.84829 27.7919 3.13736 27.7917 3.42926V25.5683C27.792 25.8603 27.7348 26.1495 27.6232 26.4193C27.5117 26.6891 27.348 26.9343 27.1416 27.1408C26.9353 27.3473 26.6902 27.511 26.4204 27.6227C26.1507 27.7344 25.8615 27.7918 25.5696 27.7917H3.42929C3.13753 27.7917 2.84864 27.7342 2.5791 27.6225C2.30957 27.5108 2.06469 27.3471 1.85844 27.1408C1.65219 26.9344 1.48863 26.6894 1.37708 26.4198C1.26554 26.1502 1.20822 25.8613 1.20837 25.5696V3.42926ZM11.7305 11.3438H15.3302V13.1515C15.8497 12.1123 17.1789 11.1771 19.1763 11.1771C23.0055 11.1771 23.913 13.247 23.913 17.0448V24.0797H20.0378V17.9099C20.0378 15.747 19.5182 14.5266 18.1987 14.5266C16.3681 14.5266 15.6069 15.8425 15.6069 17.9099V24.0797H11.7305V11.3438ZM5.08471 23.9141H8.96104V11.1771H5.08471V23.9129V23.9141ZM9.51567 7.02285C9.52297 7.35474 9.46392 7.68476 9.34196 7.99352C9.22 8.30228 9.03759 8.58357 8.80545 8.82089C8.5733 9.0582 8.29609 9.24675 7.99009 9.37548C7.68409 9.50421 7.35546 9.57052 7.02348 9.57052C6.6915 9.57052 6.36287 9.50421 6.05687 9.37548C5.75086 9.24675 5.47366 9.0582 5.24151 8.82089C5.00937 8.58357 4.82696 8.30228 4.705 7.99352C4.58304 7.68476 4.52398 7.35474 4.53129 7.02285C4.54564 6.37138 4.81451 5.75143 5.28032 5.29576C5.74613 4.84009 6.37185 4.58493 7.02348 4.58493C7.6751 4.58493 8.30083 4.84009 8.76664 5.29576C9.23245 5.75143 9.50132 6.37138 9.51567 7.02285Z"
-                  fill="black"
-                />
-              </svg>
-            </a>
-            <a href="https://github.com/carlosAguinaga" target="_blank">
-              <svg
-                width="29"
-                height="29"
-                viewBox="0 0 29 29"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  class="social-hero-icons"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M14.5 0C6.48875 0 0 6.48875 0 14.5C0 20.9163 4.15063 26.3356 9.91438 28.2569C10.6394 28.3838 10.9113 27.9488 10.9113 27.5681C10.9113 27.2238 10.8931 26.0819 10.8931 24.8675C7.25 25.5381 6.3075 23.9794 6.0175 23.1638C5.85438 22.7469 5.1475 21.46 4.53125 21.1156C4.02375 20.8438 3.29875 20.1731 4.51312 20.155C5.655 20.1369 6.47062 21.2063 6.7425 21.6413C8.0475 23.8344 10.1319 23.2181 10.9656 22.8375C11.0925 21.895 11.4731 21.2606 11.89 20.8981C8.66375 20.5356 5.2925 19.285 5.2925 13.7388C5.2925 12.1619 5.85438 10.8569 6.77875 9.84188C6.63375 9.47938 6.12625 7.99313 6.92375 5.99938C6.92375 5.99938 8.13812 5.61875 10.9113 7.48563C12.0712 7.15938 13.3038 6.99625 14.5363 6.99625C15.7688 6.99625 17.0012 7.15938 18.1613 7.48563C20.9344 5.60063 22.1488 5.99938 22.1488 5.99938C22.9463 7.99313 22.4388 9.47938 22.2938 9.84188C23.2181 10.8569 23.78 12.1438 23.78 13.7388C23.78 19.3031 20.3906 20.5356 17.1644 20.8981C17.69 21.3513 18.1431 22.2213 18.1431 23.5806C18.1431 25.52 18.125 27.0788 18.125 27.5681C18.125 27.9488 18.3969 28.4019 19.1219 28.2569C22.0003 27.285 24.5016 25.435 26.2736 22.9672C28.0456 20.4994 28.9991 17.5381 29 14.5C29 6.48875 22.5113 0 14.5 0Z"
-                  fill="black"
-                />
-              </svg>
-            </a>
+              ><img src="./img/linkedin_icon.svg" alt="linkedin"
+            /></a>
+            <a href="https://github.com/carlosAguinaga" target="_blank"
+              ><img src="./img/github_icon.svg" alt="github"
+            /></a>
+            <a href="#"><img src="./img/email.svg" alt="email" /></a>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- PORTFOLIO -->
-    <section class="portfolo-section" id="portfolo-section">
-      <div class="container">
-        <div class="title-container">
-          <svg
-            class="frame-title"
-            width="369"
-            height="110"
-            viewBox="0 0 369 110"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M366 3H3V109H287.579L366 171V3Z"
-              stroke="black"
-              stroke-width="10"
-            />
-          </svg>
-          <h2>Portafolio</h2>
-        </div>
-        <div class="cards-grid">
-          <!-- card-1 -->
-          <div class="card-item">
-            <div class="upper-card">
-              <a
-                href="https://carlosaguinaga.github.io/soccer-manager"
-                target="_blank"
-              >
-                <img src="img/soccer.png" alt="soccer" />
-              </a>
-              <div class="description-card-container">
-                <h2 class="card-item-title">Soccer Manager</h2>
-                <p class="text-card-description">
-                  Soccer Manager es un administrador de equipos de fútbol
-                  desarrollado con React y Redux.
-                </p>
-                <div class="card-badges-container">
-                  <span class="badge-card">html</span>
-                  <span class="badge-card">css</span>
-                  <span class="badge-card">react</span>
-                  <span class="badge-card">redux</span>
-                  <span class="badge-card">sass</span>
-                </div>
-              </div>
-            </div>
-            <div class="social-card-links">
-              <a
-                href="https://github.com/carlosAguinaga/soccer-manager"
-                target="_blank"
-              >
-                <svg
-                  class="social-links-icon-1"
-                  width="29"
-                  height="29"
-                  viewBox="0 0 29 29"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M14.5 0C6.48875 0 0 6.48875 0 14.5C0 20.9163 4.15063 26.3356 9.91438 28.2569C10.6394 28.3838 10.9113 27.9488 10.9113 27.5681C10.9113 27.2238 10.8931 26.0819 10.8931 24.8675C7.25 25.5381 6.3075 23.9794 6.0175 23.1638C5.85438 22.7469 5.1475 21.46 4.53125 21.1156C4.02375 20.8438 3.29875 20.1731 4.51312 20.155C5.655 20.1369 6.47062 21.2063 6.7425 21.6413C8.0475 23.8344 10.1319 23.2181 10.9656 22.8375C11.0925 21.895 11.4731 21.2606 11.89 20.8981C8.66375 20.5356 5.2925 19.285 5.2925 13.7388C5.2925 12.1619 5.85438 10.8569 6.77875 9.84188C6.63375 9.47938 6.12625 7.99313 6.92375 5.99938C6.92375 5.99938 8.13812 5.61875 10.9113 7.48563C12.0712 7.15938 13.3038 6.99625 14.5363 6.99625C15.7688 6.99625 17.0012 7.15938 18.1613 7.48563C20.9344 5.60063 22.1488 5.99938 22.1488 5.99938C22.9463 7.99313 22.4388 9.47938 22.2938 9.84188C23.2181 10.8569 23.78 12.1438 23.78 13.7388C23.78 19.3031 20.3906 20.5356 17.1644 20.8981C17.69 21.3513 18.1431 22.2213 18.1431 23.5806C18.1431 25.52 18.125 27.0788 18.125 27.5681C18.125 27.9488 18.3969 28.4019 19.1219 28.2569C22.0003 27.285 24.5016 25.435 26.2736 22.9672C28.0456 20.4994 28.9991 17.5381 29 14.5C29 6.48875 22.5113 0 14.5 0Z"
-                    fill="black"
-                  />
-                </svg>
-              </a>
-              <a
-                href="https://carlosaguinaga.github.io/soccer-manager"
-                target="_blank"
-              >
-                <svg
-                  class="social-links-icon-2"
-                  width="29"
-                  height="29"
-                  viewBox="0 0 19 19"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8 4H3C2.46957 4 1.96086 4.21071 1.58579 4.58579C1.21071 4.96086 1 5.46957 1 6V15C1 15.5304 1.21071 16.0391 1.58579 16.4142C1.96086 16.7893 2.46957 17 3 17H12C12.5304 17 13.0391 16.7893 13.4142 16.4142C13.7893 16.0391 14 15.5304 14 15V10"
-                    stroke="black"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M7 11L17 1"
-                    stroke="black"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M12 1H17V6"
-                    stroke="black"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <!-- card-2 -->
-          <div class="card-item">
-            <div class="upper-card">
-              <a href="https://pets-two.vercel.app" target="_blank">
-                <img src="img/pets.png" alt="soccer" />
-              </a>
-              <div class="description-card-container">
-                <h2 class="card-item-title">Petsgram</h2>
-                <p class="text-card-description">
-                  Petsgram es un clon de Instagram para nuestras mascotas.
-                </p>
-                <div class="card-badges-container">
-                  <span class="badge-card">react</span>
-                  <span class="badge-card">css</span>
-                </div>
-              </div>
-            </div>
-            <div class="social-card-links">
-              <a
-                href="https://github.com/carlosAguinaga/pets-two"
-                target="_blank"
-              >
-                <svg
-                  class="social-links-icon-1"
-                  width="29"
-                  height="29"
-                  viewBox="0 0 29 29"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M14.5 0C6.48875 0 0 6.48875 0 14.5C0 20.9163 4.15063 26.3356 9.91438 28.2569C10.6394 28.3838 10.9113 27.9488 10.9113 27.5681C10.9113 27.2238 10.8931 26.0819 10.8931 24.8675C7.25 25.5381 6.3075 23.9794 6.0175 23.1638C5.85438 22.7469 5.1475 21.46 4.53125 21.1156C4.02375 20.8438 3.29875 20.1731 4.51312 20.155C5.655 20.1369 6.47062 21.2063 6.7425 21.6413C8.0475 23.8344 10.1319 23.2181 10.9656 22.8375C11.0925 21.895 11.4731 21.2606 11.89 20.8981C8.66375 20.5356 5.2925 19.285 5.2925 13.7388C5.2925 12.1619 5.85438 10.8569 6.77875 9.84188C6.63375 9.47938 6.12625 7.99313 6.92375 5.99938C6.92375 5.99938 8.13812 5.61875 10.9113 7.48563C12.0712 7.15938 13.3038 6.99625 14.5363 6.99625C15.7688 6.99625 17.0012 7.15938 18.1613 7.48563C20.9344 5.60063 22.1488 5.99938 22.1488 5.99938C22.9463 7.99313 22.4388 9.47938 22.2938 9.84188C23.2181 10.8569 23.78 12.1438 23.78 13.7388C23.78 19.3031 20.3906 20.5356 17.1644 20.8981C17.69 21.3513 18.1431 22.2213 18.1431 23.5806C18.1431 25.52 18.125 27.0788 18.125 27.5681C18.125 27.9488 18.3969 28.4019 19.1219 28.2569C22.0003 27.285 24.5016 25.435 26.2736 22.9672C28.0456 20.4994 28.9991 17.5381 29 14.5C29 6.48875 22.5113 0 14.5 0Z"
-                    fill="black"
-                  />
-                </svg>
-              </a>
-              <a href="https://pets-two.vercel.app" target="_blank">
-                <svg
-                  class="social-links-icon-2"
-                  width="29"
-                  height="29"
-                  viewBox="0 0 19 19"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8 4H3C2.46957 4 1.96086 4.21071 1.58579 4.58579C1.21071 4.96086 1 5.46957 1 6V15C1 15.5304 1.21071 16.0391 1.58579 16.4142C1.96086 16.7893 2.46957 17 3 17H12C12.5304 17 13.0391 16.7893 13.4142 16.4142C13.7893 16.0391 14 15.5304 14 15V10"
-                    stroke="black"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M7 11L17 1"
-                    stroke="black"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M12 1H17V6"
-                    stroke="black"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <!-- card-3 -->
-          <div class="card-item">
-            <div class="upper-card">
-              <a
-                href="https://carlosaguinaga.github.io/Layout-with-sass"
-                target="_blank"
-              >
-                <img src="img/digital.png" alt="soccer" />
-              </a>
-              <div class="description-card-container">
-                <h2 class="card-item-title">Digital Apps</h2>
-                <p class="text-card-description">
-                  Digital Apps es una página institucional demo muy ligera y
-                  minimalista.
-                </p>
-                <div class="card-badges-container">
-                  <span class="badge-card">html</span>
-                  <span class="badge-card">sass</span>
-                  <span class="badge-card">javaScript</span>
-                </div>
-              </div>
-            </div>
-            <div class="social-card-links">
-              <a
-                href="https://github.com/carlosAguinaga/Layout-with-sass"
-                target="_blank"
-              >
-                <svg
-                  class="social-links-icon-1"
-                  width="29"
-                  height="29"
-                  viewBox="0 0 29 29"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M14.5 0C6.48875 0 0 6.48875 0 14.5C0 20.9163 4.15063 26.3356 9.91438 28.2569C10.6394 28.3838 10.9113 27.9488 10.9113 27.5681C10.9113 27.2238 10.8931 26.0819 10.8931 24.8675C7.25 25.5381 6.3075 23.9794 6.0175 23.1638C5.85438 22.7469 5.1475 21.46 4.53125 21.1156C4.02375 20.8438 3.29875 20.1731 4.51312 20.155C5.655 20.1369 6.47062 21.2063 6.7425 21.6413C8.0475 23.8344 10.1319 23.2181 10.9656 22.8375C11.0925 21.895 11.4731 21.2606 11.89 20.8981C8.66375 20.5356 5.2925 19.285 5.2925 13.7388C5.2925 12.1619 5.85438 10.8569 6.77875 9.84188C6.63375 9.47938 6.12625 7.99313 6.92375 5.99938C6.92375 5.99938 8.13812 5.61875 10.9113 7.48563C12.0712 7.15938 13.3038 6.99625 14.5363 6.99625C15.7688 6.99625 17.0012 7.15938 18.1613 7.48563C20.9344 5.60063 22.1488 5.99938 22.1488 5.99938C22.9463 7.99313 22.4388 9.47938 22.2938 9.84188C23.2181 10.8569 23.78 12.1438 23.78 13.7388C23.78 19.3031 20.3906 20.5356 17.1644 20.8981C17.69 21.3513 18.1431 22.2213 18.1431 23.5806C18.1431 25.52 18.125 27.0788 18.125 27.5681C18.125 27.9488 18.3969 28.4019 19.1219 28.2569C22.0003 27.285 24.5016 25.435 26.2736 22.9672C28.0456 20.4994 28.9991 17.5381 29 14.5C29 6.48875 22.5113 0 14.5 0Z"
-                    fill="black"
-                  />
-                </svg>
-              </a>
-              <a
-                href="https://carlosaguinaga.github.io/Layout-with-sass"
-                target="_blank"
-              >
-                <svg
-                  class="social-links-icon-2"
-                  width="29"
-                  height="29"
-                  viewBox="0 0 19 19"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8 4H3C2.46957 4 1.96086 4.21071 1.58579 4.58579C1.21071 4.96086 1 5.46957 1 6V15C1 15.5304 1.21071 16.0391 1.58579 16.4142C1.96086 16.7893 2.46957 17 3 17H12C12.5304 17 13.0391 16.7893 13.4142 16.4142C13.7893 16.0391 14 15.5304 14 15V10"
-                    stroke="black"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M7 11L17 1"
-                    stroke="black"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M12 1H17V6"
-                    stroke="black"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <!-- card-4 -->
-          <div class="card-item">
-            <div class="upper-card">
-              <a href="https://react-to-do-bice.vercel.app" target="_blank">
-                <img src="img/tasks.png" alt="soccer" />
-              </a>
-              <div class="description-card-container">
-                <h2 class="card-item-title">Tasks To-Do</h2>
-                <p class="text-card-description">
-                  Tasks To-Do es una full-stack app que nos sirve para organizar
-                  mejor nuestros pendientes, este proyecto fue desarrollado con
-                  tecnologías de Javascript como NodeJS y React.
-                </p>
-                <div class="card-badges-container">
-                  <span class="badge-card">react</span>
-                  <span class="badge-card">nodeJS</span>
-                  <span class="badge-card">mongoDB</span>
-                  <span class="badge-card">bootstrap</span>
-                </div>
-              </div>
-            </div>
-            <div class="social-card-links">
-              <a
-                href="https://github.com/carlosAguinaga/react-to-do"
-                target="_blank"
-              >
-                <svg
-                  class="social-links-icon-1"
-                  width="29"
-                  height="29"
-                  viewBox="0 0 29 29"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M14.5 0C6.48875 0 0 6.48875 0 14.5C0 20.9163 4.15063 26.3356 9.91438 28.2569C10.6394 28.3838 10.9113 27.9488 10.9113 27.5681C10.9113 27.2238 10.8931 26.0819 10.8931 24.8675C7.25 25.5381 6.3075 23.9794 6.0175 23.1638C5.85438 22.7469 5.1475 21.46 4.53125 21.1156C4.02375 20.8438 3.29875 20.1731 4.51312 20.155C5.655 20.1369 6.47062 21.2063 6.7425 21.6413C8.0475 23.8344 10.1319 23.2181 10.9656 22.8375C11.0925 21.895 11.4731 21.2606 11.89 20.8981C8.66375 20.5356 5.2925 19.285 5.2925 13.7388C5.2925 12.1619 5.85438 10.8569 6.77875 9.84188C6.63375 9.47938 6.12625 7.99313 6.92375 5.99938C6.92375 5.99938 8.13812 5.61875 10.9113 7.48563C12.0712 7.15938 13.3038 6.99625 14.5363 6.99625C15.7688 6.99625 17.0012 7.15938 18.1613 7.48563C20.9344 5.60063 22.1488 5.99938 22.1488 5.99938C22.9463 7.99313 22.4388 9.47938 22.2938 9.84188C23.2181 10.8569 23.78 12.1438 23.78 13.7388C23.78 19.3031 20.3906 20.5356 17.1644 20.8981C17.69 21.3513 18.1431 22.2213 18.1431 23.5806C18.1431 25.52 18.125 27.0788 18.125 27.5681C18.125 27.9488 18.3969 28.4019 19.1219 28.2569C22.0003 27.285 24.5016 25.435 26.2736 22.9672C28.0456 20.4994 28.9991 17.5381 29 14.5C29 6.48875 22.5113 0 14.5 0Z"
-                    fill="black"
-                  />
-                </svg>
-              </a>
-              <a href="https://react-to-do-bice.vercel.app" target="_blank">
-                <svg
-                  class="social-links-icon-2"
-                  width="29"
-                  height="29"
-                  viewBox="0 0 19 19"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8 4H3C2.46957 4 1.96086 4.21071 1.58579 4.58579C1.21071 4.96086 1 5.46957 1 6V15C1 15.5304 1.21071 16.0391 1.58579 16.4142C1.96086 16.7893 2.46957 17 3 17H12C12.5304 17 13.0391 16.7893 13.4142 16.4142C13.7893 16.0391 14 15.5304 14 15V10"
-                    stroke="black"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M7 11L17 1"
-                    stroke="black"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M12 1H17V6"
-                    stroke="black"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <!-- card-5 -->
-          <div class="card-item">
-            <div class="upper-card">
-              <a
-                href="https://carlosaguinaga.github.io/cientifico-SPA"
-                target="_blank"
-              >
-                <img src="img/cientifico.png" alt="soccer" />
-              </a>
-              <div class="description-card-container">
-                <h2 class="card-item-title">Cientifico SPA</h2>
-                <p class="text-card-description">
-                  Científico app es un SPA desarrollado con Javascript puro, sin
-                  la intervención de ninguna librería fronted.
-                </p>
-                <div class="card-badges-container">
-                  <span class="badge-card">html</span>
-                  <span class="badge-card">css</span>
-                  <span class="badge-card">javaScript</span>
-                  <span class="badge-card">webpack</span>
-                </div>
-              </div>
-            </div>
-            <div class="social-card-links">
-              <a
-                href="https://github.com/carlosAguinaga/cientifico-SPA"
-                target="_blank"
-              >
-                <svg
-                  class="social-links-icon-1"
-                  width="29"
-                  height="29"
-                  viewBox="0 0 29 29"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M14.5 0C6.48875 0 0 6.48875 0 14.5C0 20.9163 4.15063 26.3356 9.91438 28.2569C10.6394 28.3838 10.9113 27.9488 10.9113 27.5681C10.9113 27.2238 10.8931 26.0819 10.8931 24.8675C7.25 25.5381 6.3075 23.9794 6.0175 23.1638C5.85438 22.7469 5.1475 21.46 4.53125 21.1156C4.02375 20.8438 3.29875 20.1731 4.51312 20.155C5.655 20.1369 6.47062 21.2063 6.7425 21.6413C8.0475 23.8344 10.1319 23.2181 10.9656 22.8375C11.0925 21.895 11.4731 21.2606 11.89 20.8981C8.66375 20.5356 5.2925 19.285 5.2925 13.7388C5.2925 12.1619 5.85438 10.8569 6.77875 9.84188C6.63375 9.47938 6.12625 7.99313 6.92375 5.99938C6.92375 5.99938 8.13812 5.61875 10.9113 7.48563C12.0712 7.15938 13.3038 6.99625 14.5363 6.99625C15.7688 6.99625 17.0012 7.15938 18.1613 7.48563C20.9344 5.60063 22.1488 5.99938 22.1488 5.99938C22.9463 7.99313 22.4388 9.47938 22.2938 9.84188C23.2181 10.8569 23.78 12.1438 23.78 13.7388C23.78 19.3031 20.3906 20.5356 17.1644 20.8981C17.69 21.3513 18.1431 22.2213 18.1431 23.5806C18.1431 25.52 18.125 27.0788 18.125 27.5681C18.125 27.9488 18.3969 28.4019 19.1219 28.2569C22.0003 27.285 24.5016 25.435 26.2736 22.9672C28.0456 20.4994 28.9991 17.5381 29 14.5C29 6.48875 22.5113 0 14.5 0Z"
-                    fill="black"
-                  />
-                </svg>
-              </a>
-              <a
-                href="https://carlosaguinaga.github.io/cientifico-SPA"
-                target="_blank"
-              >
-                <svg
-                  class="social-links-icon-2"
-                  width="29"
-                  height="29"
-                  viewBox="0 0 19 19"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8 4H3C2.46957 4 1.96086 4.21071 1.58579 4.58579C1.21071 4.96086 1 5.46957 1 6V15C1 15.5304 1.21071 16.0391 1.58579 16.4142C1.96086 16.7893 2.46957 17 3 17H12C12.5304 17 13.0391 16.7893 13.4142 16.4142C13.7893 16.0391 14 15.5304 14 15V10"
-                    stroke="black"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M7 11L17 1"
-                    stroke="black"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M12 1H17V6"
-                    stroke="black"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <!-- card-6 -->
-          <div class="card-item">
-            <div class="upper-card">
-              <a
-                href="https://carlosaguinaga.github.io/portfolio"
-                target="_blank"
-              >
-                <img src="img/portafolio.png" alt="soccer" />
-              </a>
-              <div class="description-card-container">
-                <h2 class="card-item-title">Portafolio</h2>
-                <p class="text-card-description">
-                  Sitio web personal enfocado al portafolio profesional.
-                </p>
-                <div class="card-badges-container">
-                  <span class="badge-card">html</span>
-                  <span class="badge-card">css</span>
-                  <span class="badge-card">javaScript</span>
-                </div>
-              </div>
-            </div>
-            <div class="social-card-links">
-              <a
-                href="https://github.com/carlosAguinaga/portfolio"
-                target="_blank"
-              >
-                <svg
-                  class="social-links-icon-1"
-                  width="29"
-                  height="29"
-                  viewBox="0 0 29 29"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M14.5 0C6.48875 0 0 6.48875 0 14.5C0 20.9163 4.15063 26.3356 9.91438 28.2569C10.6394 28.3838 10.9113 27.9488 10.9113 27.5681C10.9113 27.2238 10.8931 26.0819 10.8931 24.8675C7.25 25.5381 6.3075 23.9794 6.0175 23.1638C5.85438 22.7469 5.1475 21.46 4.53125 21.1156C4.02375 20.8438 3.29875 20.1731 4.51312 20.155C5.655 20.1369 6.47062 21.2063 6.7425 21.6413C8.0475 23.8344 10.1319 23.2181 10.9656 22.8375C11.0925 21.895 11.4731 21.2606 11.89 20.8981C8.66375 20.5356 5.2925 19.285 5.2925 13.7388C5.2925 12.1619 5.85438 10.8569 6.77875 9.84188C6.63375 9.47938 6.12625 7.99313 6.92375 5.99938C6.92375 5.99938 8.13812 5.61875 10.9113 7.48563C12.0712 7.15938 13.3038 6.99625 14.5363 6.99625C15.7688 6.99625 17.0012 7.15938 18.1613 7.48563C20.9344 5.60063 22.1488 5.99938 22.1488 5.99938C22.9463 7.99313 22.4388 9.47938 22.2938 9.84188C23.2181 10.8569 23.78 12.1438 23.78 13.7388C23.78 19.3031 20.3906 20.5356 17.1644 20.8981C17.69 21.3513 18.1431 22.2213 18.1431 23.5806C18.1431 25.52 18.125 27.0788 18.125 27.5681C18.125 27.9488 18.3969 28.4019 19.1219 28.2569C22.0003 27.285 24.5016 25.435 26.2736 22.9672C28.0456 20.4994 28.9991 17.5381 29 14.5C29 6.48875 22.5113 0 14.5 0Z"
-                    fill="black"
-                  />
-                </svg>
-              </a>
-              <a
-                href="https://carlosaguinaga.github.io/portfolio"
-                target="_blank"
-              >
-                <svg
-                  class="social-links-icon-2"
-                  width="29"
-                  height="29"
-                  viewBox="0 0 19 19"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8 4H3C2.46957 4 1.96086 4.21071 1.58579 4.58579C1.21071 4.96086 1 5.46957 1 6V15C1 15.5304 1.21071 16.0391 1.58579 16.4142C1.96086 16.7893 2.46957 17 3 17H12C12.5304 17 13.0391 16.7893 13.4142 16.4142C13.7893 16.0391 14 15.5304 14 15V10"
-                    stroke="black"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M7 11L17 1"
-                    stroke="black"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M12 1H17V6"
-                    stroke="black"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="about-section" id="about-section">
-      <div class="container">
-        <div class="title-container">
-          <svg
-            class="frame-title"
-            width="369"
-            height="110"
-            viewBox="0 0 369 110"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M366 3H3V109H287.579L366 171V3Z"
-              stroke="black"
-              stroke-width="10"
-            />
-          </svg>
-          <h2>Sobre mí</h2>
-        </div>
-        <p class="about-description">
-          Soy un apasionado de la programación, me encanta desarrollar
-          soluciones digitales utilizando diversas tecnologías, para impactar de
-          manera positiva en los usuarios, mejorando su calidad de vida y su
-          experiencia con la tecnología.
-        </p>
-        <a
-          href="https://drive.google.com/file/d/1QHo_58AlQ-xzx9JsEqfBKow0tRlf1Hwf/view?usp=sharing"
-          class="btn-cv"
-          target="_blank"
-          >Download CV</a
-        >
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section class="skills-section" id="skills-section">
-      <div class="container">
-        <div class="title-container">
-          <svg
-            class="frame-title"
-            width="369"
-            height="110"
-            viewBox="0 0 369 110"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M366 3H3V109H287.579L366 171V3Z"
-              stroke="black"
-              stroke-width="10"
-            />
-          </svg>
-          <h2>Skills</h2>
-        </div>
-        <div class="skills-badges-container">
-          <div class="front-badge badge-section">
-            <div class="badge-element">
-              <h3>HTML</h3>
-              <img src="./img/html.svg" alt="Html" />
-            </div>
-            <div class="badge-element">
-              <h3>CSS</h3>
-              <img src="./img/css.svg" alt="Css" />
-            </div>
-            <div class="badge-element">
-              <h3>JAVASCRIPT</h3>
-              <img src="./img/js.svg" alt="Javascript" />
-            </div>
-            <div class="badge-element">
-              <h3>REACT</h3>
-              <img src="./img/react.svg" alt="React" />
-            </div>
-          </div>
-          <div class="back-badge badge-section">
-            <div class="badge-element">
-              <h3>NODE</h3>
-              <img src="./img/node.svg" alt="Node" />
-            </div>
-            <div class="badge-element">
-              <h3>SQL</h3>
-              <img src="./img/sql.svg" alt="Sql" />
-            </div>
-            <div class="badge-element">
-              <h3>PYTHON</h3>
-              <img src="./img/python.svg" alt="Python" />
-            </div>
-          </div>
-          <div class="other-badge badge-section">
-            <div class="badge-element">
-              <h3>FIGMA</h3>
-              <img src="./img/figma.svg" alt="Figma" />
-            </div>
-            <div class="badge-element">
-              <h3>GIT</h3>
-              <img src="./img/git.svg" alt="Git" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- RESUME -->
-    <section class="resume-section" id="resume-section">
-      <div class="container">
-        <div class="title-container">
-          <svg
-            class="frame-title"
-            width="369"
-            height="110"
-            viewBox="0 0 369 110"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M366 3H3V109H287.579L366 171V3Z"
-              stroke="black"
-              stroke-width="10"
-            />
-          </svg>
-          <h2 class="resume-title">Resumen</h2>
-        </div>
-        <div class="education-container">
-          <h3 class="education-title">Educación</h3>
-          <div class="timeline-items">
-            <div class="timeline-item">
-              <h3>Web Full-Stack</h3>
-              <h4>Academlo 2021</h4>
-            </div>
-            <div class="timeline-item">
-              <h3>Escuela de JavaScript</h3>
-              <h4>Platzi / 2020</h4>
-            </div>
-            <div class="timeline-item">
-              <h3>Escadística</h3>
-              <h4>Universidad Nacional Mayor de San Marcos / 2020</h4>
-            </div>
-          </div>
-        </div>
-
-        <div class="experience-container">
-          <h3 class="experience-title">Experiencia</h3>
-          <div class="timeline-items">
-            <div class="timeline-item">
-              <h3>Web Developer</h3>
-              <h4>Freelance / 2021</h4>
-            </div>
-            <div class="timeline-item">
-              <h3>Android Developer</h3>
-              <h4>Digitalapp / 2018 - 2020</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="contact-section" id="contact-section">
-      <div class="container">
-        <div class="title-container">
-          <svg
-            class="frame-title"
-            width="369"
-            height="110"
-            viewBox="0 0 369 110"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M366 3H3V109H287.579L366 171V3Z"
-              stroke="black"
-              stroke-width="10"
-            />
-          </svg>
-          <h2>Contacto</h2>
-        </div>
-        <div class="social-contact">
-          <a
-            href="https://www.linkedin.com/in/carlosaguinagasalinas"
-            target="_blank"
-            ><img src="./img/linkedin_icon.svg" alt="linkedin"
-          /></a>
-          <a href="https://github.com/carlosAguinaga" target="_blank"
-            ><img src="./img/github_icon.svg" alt="github"
-          /></a>
-          <a href="#"><img src="./img/email.svg" alt="email" /></a>
-        </div>
-      </div>
-    </section>
-  </div>
+      </section>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="script.js"></script>
