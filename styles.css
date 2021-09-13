@@ -34,7 +34,7 @@ body.darkmode .text-logo {
   color: var(--primary-color);
 }
 body.darkmode .title-hero {
-  color: white;
+  color: var(--dark-secondary);
 }
 body.darkmode .subtitle-hero {
   color: var(--dark-secondary);
