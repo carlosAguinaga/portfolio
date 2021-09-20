@@ -84,6 +84,10 @@ body.darkmode .timeline-item {
 }
 
 /* GENERAL */
+
+.ico {
+  font-size: 40px;
+}
 .title-container {
   position: relative;
 }
@@ -457,8 +461,9 @@ svg#mobile-exit {
   background-color: var(--lightgrey);
 }
 .skills-section .container {
-  height: 100vh;
-  min-height: 500px;
+  /* height: 100vh; */
+  min-height: 100vh;
+  height: max-content;
   padding-top: 10px;
   padding-bottom: 20px;
 }
@@ -538,6 +543,7 @@ svg#mobile-exit {
 .badge-section {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 30px;
 }
 .badge-element {
   display: flex;
@@ -601,8 +607,8 @@ svg#mobile-exit {
     height: 50vh;
   }
   .skills-section .container {
-    min-height: 500px;
-    height: 50vh;
+    /* min-height: 500px; */
+    /* height: 50vh; */
   }
 }
 
@@ -693,8 +699,6 @@ svg#mobile-exit {
     height: 100vh;
   }
   .skills-section .container {
-    min-height: 500px;
-    height: 100vh;
   }
   .hero-section .title-hero {
     font-size: 50px;
