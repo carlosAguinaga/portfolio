@@ -468,7 +468,14 @@ svg#mobile-exit {
   padding-bottom: 20px;
 }
 .skills-badges-container {
-  padding: 40px 0;
+  /* padding: 40px 0; */
+  margin-top: 60px;
+  margin-bottom: 25px;
+  overflow: hidden;
+  row-gap: 50px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 /* RESUME */
@@ -543,16 +550,15 @@ svg#mobile-exit {
 .badge-section {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 30px;
 }
 .badge-element {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
+  /* margin: 10px; */
 }
 .badge-element h3 {
-  font-size: 12px;
+  font-size: 10px;
   margin-bottom: 4px;
 }
 
