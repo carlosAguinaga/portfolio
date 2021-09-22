@@ -28,6 +28,9 @@ body.darkmode .mobile-menu path {
 body.darkmode nav ul li a {
   color: white;
 }
+body.darkmode nav ul li a:hover {
+  color: var(--dark-secondary);
+}
 body.darkmode .text-logo {
   color: var(--primary-color);
 }
@@ -177,6 +180,7 @@ nav ul li a {
 nav ul li a:hover {
   font-weight: bold;
   font-size: 25px;
+  color: var(--dark-secondary);
   /* transform: scale(1.01); */
 }
 svg#mobile-exit {
