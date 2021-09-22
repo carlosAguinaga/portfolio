@@ -10,7 +10,6 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./grid.css" />
     <link rel="stylesheet" href="./styles.css" />
@@ -118,7 +117,7 @@
             alt="image profile"
           />
           <div class="hero-description">
-            <h2 class="title-hero">Carlos Aguinaga Salinas</h2>
+            <h1 class="title-hero">Carlos Aguinaga Salinas</h1>
             <h3 class="subtitle-hero"><span class="typed"></span></h3>
             <div class="social-hero">
               <a
@@ -184,7 +183,7 @@
             <h2>Portafolio</h2>
           </div>
           <!-- main cards -->
-          <div class="cards-grid">
+          <div class="cards-grid" id="cards-grid">
             <!-- card-1 -->
             <div class="card-item">
               <div class="upper-card">
@@ -428,9 +427,9 @@
                 <div class="description-card-container">
                   <h2 class="card-item-title">Tasks To-Do</h2>
                   <p class="text-card-description">
-                    Tasks To-Do es una full-stack app para organizar mejor nuestros pendientes, este proyecto fue
-                    desarrollado con tecnologías de Javascript como NodeJS y
-                    React.
+                    Tasks To-Do es una full-stack app para organizar mejor
+                    nuestros pendientes, este proyecto fue desarrollado con
+                    tecnologías de Javascript como NodeJS y React.
                   </p>
                   <div class="card-badges-container">
                     <span class="badge-card">react</span>
@@ -1082,12 +1081,14 @@
             </svg>
             <h2>Sobre mí</h2>
           </div>
-          <p class="about-description">
-            Soy un apasionado de la programación, me encanta desarrollar
-            soluciones digitales utilizando diversas tecnologías, para impactar
-            de manera positiva en los usuarios, mejorando su calidad de vida y
-            su experiencia con la tecnología.
-          </p>
+          <blockquote>
+            <p class="about-description">
+              Soy un apasionado de la programación, me encanta desarrollar
+              soluciones digitales utilizando diversas tecnologías, para
+              impactar de manera positiva en los usuarios, mejorando su calidad
+              de vida y su experiencia con la tecnología.
+            </p>
+          </blockquote>
           <a
             href="https://drive.google.com/file/d/1QHo_58AlQ-xzx9JsEqfBKow0tRlf1Hwf/view?usp=sharing"
             class="btn-cv"
@@ -1118,89 +1119,124 @@
             <h2>Skills</h2>
           </div>
           <div class="skills-badges-container">
-              <div class="badge-element">
-                <h3>HTML</h3>
-                <span class="iconify-inline ico" data-icon="vscode-icons:file-type-html"></span>
-              </div>
-              <div class="badge-element">
-                <h3>CSS</h3>
-                <span class="iconify-inline ico" data-icon="vscode-icons:file-type-css"></span>
-              </div>
-              <div class="badge-element">
-                <h3>JAVASCRIPT</h3>
-                <span class="iconify-inline ico" data-icon="logos:javascript"></span>
-              </div>
-              <div class="badge-element">
-                <h3>FIGMA</h3>
-                <span class="iconify-inline ico" data-icon="logos:figma"></span>
-              </div>
-              <div class="badge-element">
-                <h3>NODE</h3>
-                <span class="iconify-inline ico" data-icon="vscode-icons:file-type-node"></span>
-              </div>
-              <div class="badge-element">
-                <h3>SQL</h3>
-                <span class="iconify-inline ico" data-icon="vscode-icons:file-type-sql"></span>
-              </div>
-              <div class="badge-element">
-                <h3>PYTHON</h3>
-                <span class="iconify-inline ico" data-icon="logos:python"></span>
-              </div>
-              <div class="badge-element">
-                <h3>GIT</h3>
-                <span class="iconify-inline ico" data-icon="cib:git"></span>
-              </div>
-              <div class="badge-element">
-                <h3>REACT</h3>
-                <span class="iconify-inline ico" data-icon="logos:react"></span>
-              </div>
-              <div class="badge-element">
-                <h3>REACT NATIVE</h3>
-                <span class="iconify-inline ico" data-icon="vscode-icons:file-type-reactts"></span>
-              </div>
-              <div class="badge-element">
-                <h3>REDUX</h3>
-                <span class="iconify-inline ico" data-icon="logos:redux"></span>
-              </div>
-              <div class="badge-element">
-                <h3>GRAPHQL</h3>
-                <span class="iconify-inline ico" data-icon="logos:graphql"></span>
-              </div>
-              <div class="badge-element">
-                <h3>TYPESCRIPT</h3>
-                <span class="iconify-inline ico" data-icon="logos:typescript-icon"></span>
-              </div>
-              <div class="badge-element">
-                <h3>BOOTSTRAP</h3>
-                <span class="iconify-inline ico" data-icon="logos:bootstrap"></span>
-              </div>
-              <div class="badge-element">
-                <h3>SASS</h3>
-                <span class="iconify-inline ico" data-icon="logos:sass"></span>
-              </div>
-              <div class="badge-element">
-                <h3>TAILWIND</h3>
-                <span class="iconify-inline ico" data-icon="logos:tailwindcss-icon"></span>
-              </div>
-              <div class="badge-element">
-                <h3>SOCKET.IO</h3>
-                <span class="iconify-inline ico" data-icon="cib:socket-io"></span>
-              </div>
-              <div class="badge-element">
-                <h3>MONGODB</h3>
-                <span class="iconify-inline ico" data-icon="vscode-icons:file-type-mongo"></span>
-              </div>
-              <div class="badge-element">
-                <h3>FIREBASE</h3>
-                <span class="iconify-inline ico" data-icon="logos:firebase"></span>
-              </div>
-              <div class="badge-element">
-                <h3>ANDROID</h3>
-                <span class="iconify-inline ico" data-icon="flat-color-icons:android-os"></span>
-              </div>
+            <div class="badge-element">
+              <h3>HTML</h3>
+              <span
+                class="iconify-inline ico"
+                data-icon="vscode-icons:file-type-html"
+              ></span>
+            </div>
+            <div class="badge-element">
+              <h3>CSS</h3>
+              <span
+                class="iconify-inline ico"
+                data-icon="vscode-icons:file-type-css"
+              ></span>
+            </div>
+            <div class="badge-element">
+              <h3>JAVASCRIPT</h3>
+              <span
+                class="iconify-inline ico"
+                data-icon="logos:javascript"
+              ></span>
+            </div>
+            <div class="badge-element">
+              <h3>FIGMA</h3>
+              <span class="iconify-inline ico" data-icon="logos:figma"></span>
+            </div>
+            <div class="badge-element">
+              <h3>NODE</h3>
+              <span
+                class="iconify-inline ico"
+                data-icon="vscode-icons:file-type-node"
+              ></span>
+            </div>
+            <div class="badge-element">
+              <h3>SQL</h3>
+              <span
+                class="iconify-inline ico"
+                data-icon="vscode-icons:file-type-sql"
+              ></span>
+            </div>
+            <div class="badge-element">
+              <h3>PYTHON</h3>
+              <span class="iconify-inline ico" data-icon="logos:python"></span>
+            </div>
+            <div class="badge-element">
+              <h3>GIT</h3>
+              <span class="iconify-inline ico" data-icon="cib:git"></span>
+            </div>
+            <div class="badge-element">
+              <h3>REACT</h3>
+              <span class="iconify-inline ico" data-icon="logos:react"></span>
+            </div>
+            <div class="badge-element">
+              <h3>REACT NATIVE</h3>
+              <span
+                class="iconify-inline ico"
+                data-icon="vscode-icons:file-type-reactts"
+              ></span>
+            </div>
+            <div class="badge-element">
+              <h3>REDUX</h3>
+              <span class="iconify-inline ico" data-icon="logos:redux"></span>
+            </div>
+            <div class="badge-element">
+              <h3>GRAPHQL</h3>
+              <span class="iconify-inline ico" data-icon="logos:graphql"></span>
+            </div>
+            <div class="badge-element">
+              <h3>TYPESCRIPT</h3>
+              <span
+                class="iconify-inline ico"
+                data-icon="logos:typescript-icon"
+              ></span>
+            </div>
+            <div class="badge-element">
+              <h3>BOOTSTRAP</h3>
+              <span
+                class="iconify-inline ico"
+                data-icon="logos:bootstrap"
+              ></span>
+            </div>
+            <div class="badge-element">
+              <h3>SASS</h3>
+              <span class="iconify-inline ico" data-icon="logos:sass"></span>
+            </div>
+            <div class="badge-element">
+              <h3>TAILWIND</h3>
+              <span
+                class="iconify-inline ico"
+                data-icon="logos:tailwindcss-icon"
+              ></span>
+            </div>
+            <div class="badge-element">
+              <h3>SOCKET.IO</h3>
+              <span class="iconify-inline ico" data-icon="cib:socket-io"></span>
+            </div>
+            <div class="badge-element">
+              <h3>MONGODB</h3>
+              <span
+                class="iconify-inline ico"
+                data-icon="vscode-icons:file-type-mongo"
+              ></span>
+            </div>
+            <div class="badge-element">
+              <h3>FIREBASE</h3>
+              <span
+                class="iconify-inline ico"
+                data-icon="logos:firebase"
+              ></span>
+            </div>
+            <div class="badge-element">
+              <h3>ANDROID</h3>
+              <span
+                class="iconify-inline ico"
+                data-icon="flat-color-icons:android-os"
+              ></span>
+            </div>
           </div>
         </div>
-        
       </section>
 
       <!-- RESUME -->
@@ -1292,8 +1328,6 @@
         </div>
       </section>
     </div>
-
-  
 
     <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
 

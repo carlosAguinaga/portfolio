@@ -3,8 +3,7 @@ const mobileBtn = document.getElementById("mobile-cta");
 const nav = document.querySelector("nav");
 const mobileBtnExit = document.getElementById("mobile-exit");
 const linkMenu = document.querySelector("ul.nav-list");
-const accordion = document.getElementsByClassName('contentBx');
-
+const accordion = document.getElementsByClassName("contentBx");
 
 // Menu actions
 mobileBtn.addEventListener("click", () => {
@@ -21,12 +20,10 @@ linkMenu.addEventListener("click", () => {
 
 //accordion action
 for (const element of accordion) {
-  element.addEventListener('click', function() {
-    this.classList.toggle('active')
-  })
+  element.addEventListener("click", function () {
+    this.classList.toggle("active");
+  });
 }
-
-
 
 // typed.js
 const typed = new Typed(".typed", {
@@ -72,3 +69,17 @@ if (localStorage.getItem("dark-mode") === "true") {
   document.body.classList.remove("darkmode");
   btnSwith.classList.remove("active");
 }
+
+//animaciones
+const titles = document.querySelectorAll(".title-container")
+
+window.addEventListener("scroll", (e) => {
+
+  titles.forEach((element) => {
+    const position = element.getBoundingClientRect().top;
+    if (position < window.innerHeight) {
+      element.style.animation = "move-up 1s ease";
+    }
+  })
+
+});
