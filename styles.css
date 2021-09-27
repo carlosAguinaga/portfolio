@@ -445,19 +445,18 @@ svg#mobile-exit {
   min-height: 100vh;
   padding-top: 20px;
   padding-bottom: 40px;
-  position: relative;
 }
 .about-description {
-  padding-top: 20px;
   padding-bottom: 10px;
   margin-bottom: 20px;
   font-size: 20px;
 }
 
 blockquote {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 70px;
 }
 blockquote p {
   font-style: italic;
@@ -493,10 +492,6 @@ blockquote p::after {
   padding: 10px;
   cursor: pointer;
   transition: 0.3s;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 30px;
 }
 .btn-cv:hover {
   transform: scale(1.1);
@@ -507,19 +502,16 @@ blockquote p::after {
   background-color: var(--lightgrey);
 }
 .skills-section .container {
-  /* height: 100vh; */
   min-height: 100vh;
   height: max-content;
   padding-top: 10px;
   padding-bottom: 20px;
 }
 .skills-badges-container {
-  /* padding: 40px 0; */
   margin-top: 60px;
   margin-bottom: 25px;
   overflow: hidden;
   row-gap: 50px;
-
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -565,8 +557,14 @@ blockquote p::after {
   height: 15px;
 }
 .timeline-item h4 {
-  font-weight: 200;
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+.timeline-item h5 {
+  font-weight: 400;
+  font-size: 18px;
 }
 
 /* CONTACT */
@@ -732,7 +730,7 @@ blockquote p::after {
   }
 
   .about-description {
-    font-size: 28px;
+    font-size: 25px;
     margin-top: 20px;
   }
 }
@@ -755,11 +753,17 @@ blockquote p::after {
     height: 100vh;
   }
   .skills-section .container {
-    min-height: max-content;
+    min-height: 700px;
     height: 100vh;
   }
   .hero-section .title-hero {
     font-size: 50px;
+  }
+
+  blockquote {
+    width: 60%;
+    margin-top: 70px;
+    margin-bottom: 100px;
   }
 }
 

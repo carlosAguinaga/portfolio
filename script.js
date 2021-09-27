@@ -61,6 +61,8 @@ btnSwith.addEventListener("click", () => {
   }
 });
 
+
+
 // Get current mode
 if (localStorage.getItem("dark-mode") === "true") {
   document.body.classList.add("darkmode");
