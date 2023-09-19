@@ -1,7 +1,9 @@
 :root {
-  --primary-color: #f7df1e;
+  --primary-color: #4cbaf6;
+  /* --primary-color: #f7df1e; */
   --dark-primary: #1d1d1d;
-  --dark-secondary: #9601ad;
+  --dark-secondary: #175a9d;
+  /* --dark-secondary: #9601ad; */
   --lightgrey: #f1f1f1;
   --lightdark: #222222;
 }

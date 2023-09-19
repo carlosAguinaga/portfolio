@@ -3,7 +3,8 @@ const mobileBtn = document.getElementById("mobile-cta");
 const nav = document.querySelector("nav");
 const mobileBtnExit = document.getElementById("mobile-exit");
 const linkMenu = document.querySelector("ul.nav-list");
-const accordion = document.getElementsByClassName("contentBx");
+const accordion = document.getElementsByClassName("label");
+// const accordion = document.getElementsByClassName("contentBx");
 
 // Menu actions
 mobileBtn.addEventListener("click", () => {
@@ -20,17 +21,17 @@ linkMenu.addEventListener("click", () => {
 
 //accordion action
 for (const element of accordion) {
-  element.addEventListener("click", function () {
-    this.classList.toggle("active");
+  element.addEventListener("click", function (e) {
+    e.target.parentNode.classList.toggle("active");
   });
 }
 
 // typed.js
 const typed = new Typed(".typed", {
   strings: [
-    '<i class="typed-skill">Developer</i>',
+    '<i class="typed-skill">Mobile Developer</i>',
     '<i class="typed-skill">Programmer</i>',
-    '<i class="typed-skill">Fullstack</i>',
+    '<i class="typed-skill">Web and Design</i>',
   ],
   // stringsElement: "#cadenas-texto", // ID del elemento que contiene cadenas de texto a mostrar.
   typeSpeed: 75, // Velocidad en mlisegundos para poner una letra,
