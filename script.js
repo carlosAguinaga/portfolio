@@ -29,9 +29,9 @@ for (const element of accordion) {
 // typed.js
 const typed = new Typed(".typed", {
   strings: [
+    '<i class="typed-skill">Fullstack Developer</i>',
     '<i class="typed-skill">Mobile Developer</i>',
-    '<i class="typed-skill">Programmer</i>',
-    '<i class="typed-skill">Web and Design</i>',
+    // '<i class="typed-skill">Programmer</i>',
   ],
   // stringsElement: "#cadenas-texto", // ID del elemento que contiene cadenas de texto a mostrar.
   typeSpeed: 75, // Velocidad en mlisegundos para poner una letra,
